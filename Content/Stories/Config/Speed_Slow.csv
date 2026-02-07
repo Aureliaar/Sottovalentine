@@ -1,7 +1,0 @@
----,Name,Value,Description
-Timing,PerLetter,0.05,Seconds before each letter appears
-Timing,ExtraAtSpace,0.2,Extra delay at word boundary
-Timing,ExtraAtPeriod,1,Extra delay at . ! ?
-Timing,ExtraAtComma,0.35,Extra delay at , ;
-Timing,ExtraAtColon,0.7,Extra delay at :
-Timing,BlockDuration,3.0,Duration for block animations
