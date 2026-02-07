@@ -1,0 +1,63 @@
+[STORY]
+title = Ricordo di Orazio
+ost = Event:/Music/Stories/Orazio_Theme
+
+[SCREEN_01_INTRO]
+background = ORAZIO_SKY_2_cut.jpg
+transition = fade
+
+Domani sarà una giornata speciale!
+Sono una sorta di agente immobiliare per persone con necessità “peculiari”, ovvero con capacità paranormali. | top_down | pause=long
+Sulle case lontane, sui frassini che imbiancano le colline, sui prati in fiore, sulle tombe dischiuse. | top_down
+Da quando la comunità magica ha deciso di nascondersi dalle persone comuni sono nati, all’interno delle città, dei complessi residenziali abitati da soli caster e altre creature fuori dall’ordinario.
+Se riuscirò a rispettare la deadline datami dai miei superiori: 11 caster collocati in un mese nella palazzina “Sodoma”. Nome strano eh? | top_down
+Be’, in tal caso riceverò una promozione. | paragraph | speed=fast
+Ho selezionato due ottimi candidati per la stanza 69, devo solo decidere a chi, tra loro, dare appuntamento nel pomeriggio di domani.
+Un brivido mi percorre la schiena mentre la mia mente torna al primo incontro. | top_down
+[SCREEN_02_FLASHBACK_NERIDA]
+transition = crossfade
+
+“Aidan, giusto? Posso darti del tu vero?” | left_to_right
+Io annuisco mentre, del tutto incurante, la donna mi sputa il fumo della sua
+sigaretta in faccia.
+“La stanza è confortevole e soprattutto luminosa.”
+La giornalista sembra compiaciuta mentre si guarda attorno. | top_down
+“Tu non sai quanto sia fondamentale la luce quando devi scrivere.” | left_to_right
+Sembra star parlando più con se stessa che davvero con me.
+“Posso immaginare...”
+La donna visibilmente irritata mi rivolge un sorriso obliquo, interrompendomi. | top_down
+“No! Tu non hai idea di cosa io stia parlando.” | left_to_right | speed=fast
+Le sue parole mi risuonano nella testa e mi trovo ad annuire: “Hai ragione, non lo so!”
+Solo dopo qualche secondo mi rendo conto che ha utilizzato qualche sorta di potere psichico per piegare la mia volontà. | top_down | speed=slow
+Imbarazzante... ma mi è piaciuto! | top_down
+“Ovvio che non lo sai! L’ispirazione che ti spinge a scrivere per ore e ore con la musica nelle orecchie. Come potresti?” | left_to_right
+Colgo la palla al balzo.
+“No, non potrei. Però posso dirti che le pareti e le finestre di questo appartamento sono ben insonorizzate. Potrai ascoltare musica a qualsiasi orario senza disturbare nessuno. Non ti sentirebbero neanche se ti mettessi a urlare.”
+Mi lancia uno sguardo malizioso all’ultima affermazione e si avvicina lentamente al mio orecchio. | top_down
+“Però Aidan, a questo posto manca qualcosa.” | left_to_right
+Il tono da bimba capricciosa dona in modo particolare alla sua immagine di pantera.
+Dal canto mio sorrido, sono sempre stato in grado di inquadrare le persone e so perfettamente come provvedere.
+“Non ti preoccupare Nerida, ci penso io!” | typewriter
+[SCREEN_03_FLASHBACK_GABRIEL]
+background = ORAZIO_SKY_2_cut.jpg
+transition = crossfade
+
+“Devo dirtelo Aidan, la cucina in comune mi ha proprio conquistato.” | left_to_right
+Incredibile come l’entusiasmo del giovane pasticcere mi contagi.
+“Hai davvero voglia di cucinare altri dolci anche quando non lavori?”
+Vengo investito in pieno dal sorriso più luminoso che abbia mai visto. | top_down
+“Assolutamente sì! E sarò felice di fartene assaggiare anche qualcuno.” | left_to_right
+Indica un punto vicino alla finestra. | top_down
+“Sai quante piante posso far crescere lì?” | left_to_right
+Lo incalzo.
+“Ingredienti essenziali per la cucina vegana?”
+Annuisce compiaciuto ed emozionato. Poi tira fuori dalla tasca un cioccolatino e me lo porta direttamente alla bocca. | top_down
+“Prova!” | left_to_right
+La cioccolata mi si scioglie sul palato, sembra veramente al latte.
+Intanto quel golden retriver boy mi scruta con occhi grandi e curiosi. | top_down
+“Com’è?” | left_to_right
+Mi sento improvvisamente sereno e rilassato come se le endorfine fossero salite di botto, forse è davvero così. In fondo è un caster gastronomico, no?
+“Eccezionale!” 
+Mi abbraccia di getto, davvero troppo espansivo, davvero troppo piacevole. | top_down
+“Credi di poter rendere questo posto pazzesco?” | left_to_right
+“Mi offendi Gabriel… ovvio che lo renderò tale.” | top_down
