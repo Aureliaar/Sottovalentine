@@ -1,0 +1,20 @@
+# Electron Editor - Build artifacts (don't commit)
+Editor/node_modules/
+Editor/dist/
+Editor/dist_electron/
+
+# Electron Editor - Local settings
+Editor/.claude/settings.local.json
+
+# UE Plugin - Build artifacts
+Binaries/
+Intermediate/
+*.dll
+*.pdb
+*.exp
+*.lib
+
+# Keep the packaged editor binary for convenience
+!Editor/short-story-editor.exe
+!Editor/chrome_*.pak
+!Editor/*.dll

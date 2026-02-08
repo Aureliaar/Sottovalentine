@@ -1,0 +1,17 @@
+[STORY]
+title = Test Story
+ost = Event:/Music/Test
+
+[SCREEN_01]
+background = /Game/Textures/TestBg
+transition = fade
+
+Welcome to the test story. | typewriter
+With a test linebreak in Typewriter. | word_rain
+This is a simple demonstration of Word Rain. | word_rain
+Of the short story system, which also has paragraphs that pop all together. We will auto-wrap at some point, yes? yes? yes? maybeeeeee? yes? | paragraph
+And more test linebreaks! | top_down
+Which were top down fade!!!! | top_down | pause=standard
+And more test lines, but FAST! | typewriter | speed=fast
+Which were top down fade again, huh!!!!! | top_down
+ | typewriter

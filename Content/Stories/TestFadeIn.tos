@@ -1,0 +1,8 @@
+# Short Story Animation Types Implementation
+
+- [x] Explore existing `ShortStorySubsystem` and `AnimType` implementation <!-- id: 0 -->
+- [x] Design "Fade In" and "Top to Bottom" implementation details <!-- id: 1 -->
+- [x] Create Implementation Plan <!-- id: 2 -->
+- [x] Implement `Fade In` Animation (Mapped to Paragraph) <!-- id: 3 -->
+- [x] Implement `Top to Bottom` Animation <!-- id: 4 -->
+- [x] Verify functionality (Build Succeeded, Test Script Created) <!-- id: 5 -->

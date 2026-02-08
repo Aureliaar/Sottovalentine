@@ -1,0 +1,8 @@
+---,Name,Value,Description
+Pause,None,0,Default pause (uses LineBreakPercent)
+Pause,Short,1,Short pause after line
+Pause,Standard,2,Standard pause after line
+Pause,Long,3.5,Long pause after line
+Transition,ScreenPause,4,Pause between screens
+Transition,FadeWindow,1,Fade window duration in seconds
+Transition,LineBreakPercent,0.33,Implicit line break pause as percentage of fade window
