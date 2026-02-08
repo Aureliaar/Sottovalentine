@@ -7,12 +7,12 @@ Editor/dist_electron/
 Editor/.claude/settings.local.json
 
 # UE Plugin - Build artifacts
-Binaries/
+#Binaries/
 Intermediate/
-*.dll
+#*.dll
 *.pdb
 *.exp
-*.lib
+#*.lib
 
 # Keep the packaged editor binary for convenience
 !Editor/short-story-editor.exe

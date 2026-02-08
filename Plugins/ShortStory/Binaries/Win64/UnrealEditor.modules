@@ -1,0 +1,8 @@
+{
+	"BuildId": "47537391",
+	"Modules": 
+	{
+		"ShortStory": "UnrealEditor-ShortStory.dll",
+		"ShortStoryEditor": "UnrealEditor-ShortStoryEditor.dll"
+	}
+}
