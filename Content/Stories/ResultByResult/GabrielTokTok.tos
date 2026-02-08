@@ -1,0 +1,11 @@
+[STORY]
+title = Sexantanove
+ost = Event:/Music/Stories/Orazio_Theme
+
+[SCREEN_5_GABRIEL_TOKTOK]
+transition = fade
+
+*Toc-toc*
+“Ciao Aidan! Sono prontissimo!”
+Il sorriso di Gabriel illumina la stanza mentre corre ad abbracciarmi. | left_to_right
+

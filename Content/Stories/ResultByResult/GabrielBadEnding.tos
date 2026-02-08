@@ -1,0 +1,19 @@
+[STORY]
+title = Sexantanove
+ost = Event:/Music/Stories/Orazio_Theme
+
+[SCREEN_10_GABRIEL_BADENDING]
+transition = fade
+
+Il biondino si tortura le mani e continua a guardare il pavimento evitando il mio sguardo.
+“Aidan, ti ringrazio ma non credo che quetso posto adatto a me.”
+Resto in silenzio. | left_to_right | speed=slow
+“Non te la prendere, ma… ma credo che un’altra persona si troverebbe meglio
+qui.”
+Annuisco mentre il giovane pesca un dolcetto dalla tracolla e lo poggia sulla
+scrivania, rivolgendomi uno sguardo di scuse, prima di imboccare l'uscita. | left_to_right | speed=slow
+Ora mi restano solo due consapevolezze: la prima è che non vi saranno
+promozioni.
+La seconda è che se per avere cibo sano non vi è necessità né di reti né di
+trappole, ma lo stesso non vale per conquistare Gabriel. | left_to_right | speed=slow
+

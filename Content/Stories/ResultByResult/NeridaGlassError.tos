@@ -1,0 +1,16 @@
+[STORY]
+title = Sexantanove
+ost = Event:/Music/Stories/Orazio_Theme
+
+
+[SCREEN_7_NERIDA_SPECCHIO_NEG]
+transition = fade
+
+Non posso far meno di eseguire l’ordine e così mi trovo a fissare i miei boia dal basso. | left_to_right | speed=slow
+Nerida ci si mette davanti con una posa fiera, ma il suo volto convinto e sorridente si trasforma in una smorfia.
+“Ma cosa…?” | left_to_right | speed=slow
+Mi affaccio e con orrore scopro l’immagine della giornalista cambiare forma.
+I suoi seni diventano due mongolfiere.
+“Che scherzo è mai questo?” | left_to_right | speed=slow
+Si gira verso di me.
+“La pagherai!” | left_to_right | speed=slow

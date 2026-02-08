@@ -1,0 +1,17 @@
+[STORY]
+title = Sexantanove
+ost = Event:/Music/Stories/Orazio_Theme
+
+[SCREEN_6_GABRIEL_PIANTA_POS]
+transition = fade
+
+“Ho pensato che tra le tue piante non potesse mancare questo esemplare.” | left_to_right | speed=slow
+Il giovane si avvicina ma, nonostante il sorriso gentile, sembra a disagio.
+“Grazie Aidan, ma… è una pianta carnivora?” | left_to_right | speed=slow
+Scuoto la testa e ridacchio.
+“Assolutamente no. So che sei molto impegnato e che hai poco tempo per rilassarti.” | left_to_right | speed=slow
+Silenzio, gli carezzo una guancia.
+“Sai questa pianta si nutre in maniera particolare.” | left_to_right | speed=slow
+La mia mano scende sulla sua gamba.
+“Mi fai vedere come si fa?” | left_to_right | speed=slow
+“Certo!” | left_to_right

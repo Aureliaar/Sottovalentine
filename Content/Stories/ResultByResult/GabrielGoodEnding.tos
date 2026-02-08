@@ -1,0 +1,21 @@
+[STORY]
+title = Sexantanove
+ost = Event:/Music/Stories/Orazio_Theme
+
+[SCREEN_9_GABRIEL_GOODENDING]
+transition = fade
+
+“Mi piace un sacco!” | left_to_right | speed=slow
+“Lo so! Credo proprio sia l’appartamento perfetto per te!”
+Annuisce. | left_to_right | speed=slow
+“Forse dovrei pensarci ancora un attimo.”
+La sua espressione indecisa mi colpisce. | left_to_right | speed=slow
+“No, direi di no!”
+Non ho la benché minima intenzione di perdere la mia promozione. | left_to_right | speed=slow
+“Lascia che ti mostri il letto.”
+Gli faccio cenno di seguirmi e lui non si fa pregare. | left_to_right | speed=slow
+Mentre ci rotoliamo tra le lenzuola Gabriel rende il tutto appiccicoso.
+“Panna di riso.” | left_to_right | speed=slow
+Mi sorride mentre con l’indice porta la sostanza alle mie labbra. Succhio.
+“Incantesimo strano ma apprezzato."
+Ridacchio:"Comunque anche io voglio mostrarti una magia.”

@@ -1,0 +1,16 @@
+[STORY]
+title = Sexantanove
+ost = Event:/Music/Stories/Orazio_Theme
+
+[SCREEN_10_NERIDA_BADENDING]
+transition = fade
+
+Nerida mi guarda scocciata da dietro la cortina del fumo di sigaretta, il suo
+piede tamburella sul pavimento. | left_to_right | speed=slow
+“Sei davvero una delusione.”
+Non fiato, sono completamente in imbarazzo per il mio fallimento. | left_to_right | speed=slow
+“Di certo non puoi soddisfarmi con così poco.”
+Detto ciò la giornalista gira i tacchi e sparisce sbattendo la porta. | left_to_right | speed=slow
+Mi restano solo due consapevolezze: la prima è che non vi saranno promozioni.
+La seconda è che la penna ferisce più della spada. | left_to_right | speed=slow
+

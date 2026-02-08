@@ -1,0 +1,17 @@
+[STORY]
+title = Sexantanove
+ost = Event:/Music/Stories/Orazio_Theme
+
+[SCREEN_6_GABRIEL_PIANTA_NEG]
+transition = fade
+
+“Ho pensato che tra le tue piante non potesse mancare questo esemplare.” | left_to_right | speed=slow
+Il giovane si avvicina ma, nonostante il sorriso gentile, sembra a disagio.
+“Una pianta-liana?” | left_to_right | speed=slow
+Sorrido: “Esatto.”
+Gabriel gonfia le guance innervosito. | left_to_right | speed=slow
+“Sai che sono pericolosissime? Rischi che predino sconosciuti o animali.”
+Non avevo preventivato questa reazione.
+“Capisco tu lo abbia fatto per me, ma devo chiederti di portarla via!” | left_to_right | speed=slow
+Annuisco.
+“Rimedierò.” | left_to_right
