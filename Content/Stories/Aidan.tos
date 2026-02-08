@@ -9,21 +9,20 @@ Domani sarà una giornata speciale! | left_to_right | speed=slow
 Sono una sorta di agente immobiliare per persone con necessità peculiari,
 ovvero con capacità paranormali. | left_to_right | speed=slow
 Da quando la comunità magica ha deciso di nascondersi dalle persone comuni sono nati, all’interno delle città, dei complessi residenziali abitati da soli caster e altre creature fuori dall’ordinario. | left_to_right | speed=slow
-Riceverò una promozione se riuscirò a rispettare la deadline: 
-ovvero collocare, entro questo fine mese, 11 caster nella palazzina Sodoma.  | left_to_right | speed=slow
-
+Riceverò una promozione se riuscirò a rispettare la deadline:
+ovvero collocare, entro questo fine mese, 11 caster nella palazzina Sodoma. | left_to_right | speed=slow
 Nome strano eh? | left_to_right | speed=slow
 Domani sarà l’ultimo giorno disponibile e mi manca solo un appuntamento per la
 stanza n. 69. | left_to_right | speed=slow
 Ho selezionato due ottimi candidati, ma chi scegliere?
 Un brivido mi percorre la schiena mentre la mia mente torna al primo incontro. | left_to_right | speed=slow
 [SCREEN_02_FLASHBACK_NERIDA]
-background = aidan.png
+background = nerida.png
 transition = crossfade
 
 “Aidan, giusto? Posso darti del tu vero?” | left_to_right | speed=slow
 Io annuisco mentre, del tutto incurante, la donna mi sputa il fumo
-della sigaretta in faccia. 
+della sigaretta in faccia.
 Tossicchio: “La stanza è confortevole e soprattutto luminosa.” | left_to_right | speed=slow
 La giornalista sembra compiaciuta mentre si guarda attorno.
 "Tu non sai quanto sia fondamentale la luce quando devi scrivere.” | left_to_right | speed=slow
@@ -37,19 +36,18 @@ Imbarazzante... ma mi è piaciuto! | left_to_right | speed=slow
 “Ovvio che non lo sai!  L’ispirazione che ti spinge a scrivere per ore e ore con
 la musica nelle orecchie. Come potresti?”
 Colgo la palla al balzo. | left_to_right | speed=slow
-
 “No, non potrei. Però posso dirti che le pareti e le finestre di questo
-appartamento sono ben insonorizzate. Potrai ascoltare musica a qualsiasi orario
+appartamento sono ben insonorizzate. Potrai ascoltare musica a qualsiasi
+orario
 senza disturbare nessuno. Non ti sentirebbero neanche se ti mettessi a urlare.”
 Mi lancia uno sguardo malizioso all’ultima affermazione e si avvicina lentamente
 al mio orecchio. | left_to_right | speed=slow
 “Però Aidan, a questo posto manca qualcosa.” | left_to_right | speed=slow
 Il tono da bimba capricciosa dona in modo particolare alla sua immagine di pantera.
 Dal canto mio sorrido, sono sempre stato in grado di inquadrare le persone e so perfettamente come provvedere. | left_to_right | speed=slow
-
 “Non ti preoccupare Nerida, ci penso io!” | left_to_right | speed=slow
 [SCREEN_03_FLASHBACK_GABRIEL]
-background = nerida.png
+background = aidan.png
 transition = crossfade
 
 “Devo dirtelo Aidan, la cucina in comune mi ha proprio conquistato.” | left_to_right | speed=slow
@@ -67,7 +65,6 @@ La cioccolata mi si scioglie sul palato, sembra veramente al latte.
 Intanto quel golden retriever boy mi scruta con occhi grandi e curiosi. | left_to_right | speed=slow
 “Com’è?" | left_to_right | speed=slow
 Mi sento improvvisamente sereno e rilassato come se le endorfine fossero salite di botto, forse è davvero così. In fondo è un caster gastronomico, no? | left_to_right | speed=slow
-
 “Eccezionale!”
 Mi abbraccia di getto, davvero troppo espansivo, davvero troppo piacevole. | left_to_right | speed=slow
 “Credi di poter rendere questo posto pazzesco?” | left_to_right | speed=slow
@@ -80,12 +77,12 @@ Come apro la porta il caos mi travolge. Prevedibile!
 Gli incanti caotici sono sempre un’arma a doppio taglio. Chi meglio di un caster caotico come me può saperlo? | left_to_right | speed=slow
 La mia abilità consiste nello studiare una o più persone, per un massimo di tre individui, per poi materializzare tre oggetti per ognuna di loro. | left_to_right | speed=slow
 In alcuni casi da una carta si potrebbe materializze un set di oggetti, ad esempio pennello e tavola incorporata di colori.
-In tal caso l’insieme di oggetti dovrà essere utilizzato insieme, o si romperà.  | left_to_right | speed=slow
+In tal caso l’insieme di oggetti dovrà essere utilizzato insieme, o si romperà. | left_to_right | speed=slow
 Il procedimento inizia la sera: per iniziare studio un determinato profilo.
 Poi, durante la notte, il mio subconscio crea delle carte illustrate che
 si materializzano in un luogo prestabilito da me.
 Talvolta creando un po' di disordine come in questo caso. | left_to_right | speed=slow
-Ora devo solo trovarle e far prendere loro forma. 
+Ora devo solo trovarle e far prendere loro forma.
 Necessitando io di un catalizzatore userò la mia
 bacchetta. | left_to_right | speed=slow
 Poi diciamocelo, affittare stanze con bacchetta e cappello tipico da caster è
@@ -101,7 +98,7 @@ transition = fade
 “Non appena l’ho vista ho pensato potesse essere di tuo gradimento.”
 Con passi felini Nerida si avvicina alla pianta. | left_to_right | speed=slow
 “Incredibile, una pianta-liana. Sai che è ottima per fare da guardia?”
-Il tono della donna assume una sfumatura maliziosa. 
+Il tono della donna assume una sfumatura maliziosa.
 “Dopo che la piantina prende l’intruso puoi fargli tutto ciò che vuoi.” | left_to_right | speed=slow
 “Tutto?”
 Scoppia a ridere mentre si sfila i pantaloni. | left_to_right | speed=slow
@@ -109,7 +106,7 @@ Scoppia a ridere mentre si sfila i pantaloni. | left_to_right | speed=slow
 A quel comando agisco automaticamente. | left_to_right | speed=slow
 Avrei eseguito quell’ordine in ogni caso e guardandola negli occhi so che Nerida
 ne è consapevole. Non credo che userebbe, o sarebbe in grado di usare, i suoi
-poteri contro la volontà della sua preda. 
+poteri contro la volontà della sua preda.
 Probabilmente il suo è solo un modo per dare una spinta, oppure sa che avrei
 esitato e per una donna come lei questa sarebbe un’insubordinazione
 intollerabile. | left_to_right | speed=slow
@@ -145,9 +142,8 @@ Non posso far meno di eseguire l’ordine e così mi trovo a fissare i miei boia
 Nerida ci si mette davanti con una posa fiera, ma il suo volto convinto e sorridente si trasforma in una smorfia.
 “Ma cosa…?” | left_to_right | speed=slow
 Mi affaccio e con orrore scopro l’immagine della giornalista cambiare forma.
-I suoi seni diventano due mongolfiere. 
+I suoi seni diventano due mongolfiere.
 “Che scherzo è mai questo?” | left_to_right | speed=slow
-
 Si gira verso di me.
 “La pagherai!” | left_to_right | speed=slow
 [SCREEN_8_NERIDA_SEDIA_POS]
@@ -169,7 +165,7 @@ Sorrido portando al centro della stanza due sedie abbinate a un piccolo tavolino
 “Mi raccomando usa queste sedie solo con il tavolino o si romperanno.” | left_to_right | speed=slow
 Nerida mi guarda palesemente scocciata.
 “Se pensi davvero che mi prenda un caffè con te o le mie amichette qui dentro ti
-sbagli di grosso. 
+sbagli di grosso.
 Questa stanza è già abbastanza piccola di suo!” | left_to_right | speed=slow
 [SCREEN_9_NERIDA_GOODENDING]
 transition = fade
@@ -209,8 +205,7 @@ Il sorriso di Gabriel illumina la stanza mentre corre ad abbracciarmi. | left_to
 [SCREEN_6_GABRIEL_PIANTA_POS]
 transition = fade
 
-“Ho pensato che tra le tue piante non potesse mancare questo esemplare.”
- | left_to_right | speed=slow
+“Ho pensato che tra le tue piante non potesse mancare questo esemplare.” | left_to_right | speed=slow
 Il giovane si avvicina ma, nonostante il sorriso gentile, sembra a disagio.
 “Grazie Aidan, ma… è una pianta carnivora?” | left_to_right | speed=slow
 Scuoto la testa e ridacchio.
@@ -252,8 +247,7 @@ Invito Gabriel a mettersi davanti allo specchio.
 “Lo adoro, è come piace a me. Ampio e grande.” | left_to_right | speed=slow
 Sto per dargli ragione ma dalla superficie riflettente fuoriesce una mano
 gigante che lo indica.
-“Bel biondo! Togliti i pantaloni e te lo faccio vedere io cos’è ampio e grande.”
- | left_to_right | speed=slow
+“Bel biondo! Togliti i pantaloni e te lo faccio vedere io cos’è ampio e grande.” | left_to_right | speed=slow
 Gabriel diventa rosso, io sobbalzo: “Oh... no!” | left_to_right | speed=slow
 [SCREEN_8_GABRIEL_SEDIA_POS]
 transition = fade
@@ -262,12 +256,10 @@ Sorrido portando al centro della stanza due sedie abbinate a un piccolo tavolino
 “Mi raccomando usa queste sedie solo con il tavolino o si romperanno.” | left_to_right | speed=slow
 Gli occhi del Golden retriever mi scrutano come se si aspattassero qualcosa da me.
 “Siediti! Voglio fare una cosa.”
-Eseguo l’ordine e il giovane mi stupisce.
- | left_to_right | speed=slow
+Eseguo l’ordine e il giovane mi stupisce. | left_to_right | speed=slow
 Dalla tracolla comincia a pescare diversi ingredienti vegetali e posarli sul
 tavolo.
-“Questo solitamente non lo faccio davanti ai clienti.”
- | left_to_right | speed=slow
+“Questo solitamente non lo faccio davanti ai clienti.” | left_to_right | speed=slow
 Mi rivolge un occhiolino.
 Dopodiché inizia a sussurrare parole arcane e una luce accecante
 riempie la stanza costringendomi a sringere le palpebre. | left_to_right | speed=slow
