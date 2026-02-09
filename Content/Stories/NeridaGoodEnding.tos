@@ -7,17 +7,17 @@ ost = Event:/Music/Stories/Orazio_Theme
 transition = fade
 
 “Cazzo Aidan! Ci sai proprio fare con il tuo lavoro!”
-La giornalista tira una boccata della sua sigaretta. | left_to_right | speed=slow
-“Grazie cara, come potevo sbagliare con una musa come te?” | left_to_right | speed=slow
-“La prendo! Voglio questa stanza!" | left_to_right | speed=slow
+La giornalista tira una boccata della sua sigaretta. | typewriter | speed=slow
+“Grazie cara, come potevo sbagliare con una musa come te?” | typewriter | speed=slow
+“La prendo! Voglio questa stanza!" | typewriter | speed=slow
 “I documenti sono già…”
-La donna sputa un po’ di fumo e schiaccia la cicca nel portacenere. | left_to_right | speed=slow
+La donna sputa un po’ di fumo e schiaccia la cicca nel portacenere. | typewriter | speed=slow
 “No, no... bel caster! Se vuoi che io firmi devo prima provare il letto.”
 Uno a uno gli indumenti della donna iniziano a cadere.
-Sono succube di questo spettacolo e non ho la minima intenzione di lasciarle tutto il divertimento. | left_to_right | speed=slow
+Sono succube di questo spettacolo e non ho la minima intenzione di lasciarle tutto il divertimento. | typewriter | speed=slow
 La seguo, ci gioco, è lei a dettare le regole.
 Tutto finisce dopo non so quanto tempo, mi imbarazza quasi vederla così nuda.
 Prendo il mio cappello e glielo metto addosso per coprirla almeno un po’.
-Quasi mi scordo che questo affito per me significa una promozione. | left_to_right | speed=slow
-“Nerida, qualche volta ti va di uscire con me?” | left_to_right | speed=slow
-Scoppia a ridere: “Forse!” | left_to_right | speed=slow
+Quasi mi scordo che questo affito per me significa una promozione. | typewriter | speed=slow
+“Nerida, qualche volta ti va di uscire con me?” | typewriter | speed=slow
+Scoppia a ridere: “Forse!” | typewriter | speed=slow

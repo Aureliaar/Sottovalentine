@@ -71,7 +71,7 @@ Saved/*
 # Compiled source files for the engine to use
 Intermediate/*
 Plugins/*/Intermediate/*
-Plugins/*/Binaries/*.pdb
+#Plugins/*/Binaries/*.pdb
 
 # Cache files for the editor to use
 DerivedDataCache/*
@@ -116,3 +116,4 @@ Tools/ShortStoryEditor/node_modules/*
 Tools/ShortStoryEditor/dist_electron/*
 Data/DataTables/*
 Data/DataTables/*.json
+Plugins/ShortStory/Editor/*

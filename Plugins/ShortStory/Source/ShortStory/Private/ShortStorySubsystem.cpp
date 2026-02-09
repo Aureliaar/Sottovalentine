@@ -60,15 +60,18 @@ FShortStory UShortStorySubsystem::LoadStory(const FString& StoryFileName, bool b
 		return FShortStory();
 	}
 
+	// Normalize filename for case-insensitive caching
+	FString CacheKey = StoryFileName.ToLower();
+
 	// Check cache first (unless force reload)
 	if (!bForceReload)
 	{
 		FScopeLock Lock(&CacheMutex);
-		if (CachedStories.Contains(StoryFileName))
+		if (CachedStories.Contains(CacheKey))
 		{
 			UE_LOG(LogShortStory, Log, TEXT("LoadStory: Loading '%s' from cache"), *StoryFileName);
 			bSuccess = true;
-			return CachedStories[StoryFileName];
+			return CachedStories[CacheKey];
 		}
 	}
 
@@ -118,7 +121,7 @@ FShortStory UShortStorySubsystem::LoadStory(const FString& StoryFileName, bool b
 	// Cache the story
 	{
 		FScopeLock Lock(&CacheMutex);
-		CachedStories.Add(StoryFileName, Story);
+		CachedStories.Add(CacheKey, Story);
 	}
 
 	bSuccess = true;
@@ -311,7 +314,7 @@ TArray<FString> UShortStorySubsystem::GetAvailableStories()
 			}
 
 			FString Filename = FPaths::GetCleanFilename(FilenameOrDirectory);
-			if (Filename.EndsWith(TEXT(".tos")))
+			if (Filename.EndsWith(TEXT(".tos"), ESearchCase::IgnoreCase))
 			{
 				// We want path relative to StoriesDir
 				FString FullPath = FilenameOrDirectory;
@@ -334,13 +337,13 @@ TArray<FString> UShortStorySubsystem::GetAvailableStories()
 bool UShortStorySubsystem::IsStoryCached(const FString& StoryFileName) const
 {
 	FScopeLock Lock(&CacheMutex);
-	return CachedStories.Contains(StoryFileName);
+	return CachedStories.Contains(StoryFileName.ToLower());
 }
 
 void UShortStorySubsystem::ClearCachedStory(const FString& StoryFileName)
 {
 	FScopeLock Lock(&CacheMutex);
-	if (CachedStories.Remove(StoryFileName) > 0)
+	if (CachedStories.Remove(StoryFileName.ToLower()) > 0)
 	{
 		UE_LOG(LogShortStory, Log, TEXT("ClearCachedStory: Cleared '%s' from cache"), *StoryFileName);
 	}
@@ -1153,20 +1156,16 @@ void UShortStorySubsystem::AdvanceToNextScreen()
 	if (CurrentScreenIndex < CurrentStory.Screens.Num())
 	{
 		// More screens, start next screen
-		const FStoryScreen& NextScreen = CurrentStory.Screens[CurrentScreenIndex];
-
-		// Reset screen state
-		CurrentLineIndex = 0;
-		ScreenElapsedTime = 0.0f;
-		ScreenElapsedTime = 0.0f;
-		ProcessedTimedEventIndices.Empty();
-		LineStartTimes.Init(-1.0f, NextScreen.Lines.Num());
+		ResetScreenState(CurrentScreenIndex);
 
 		// Set state to transitioning
 		CurrentState = EStoryPlaybackState::TransitioningScreen;
 
 		UE_LOG(LogShortStory, Log, TEXT("AdvanceToNextScreen: Advanced to screen %d/%d"),
 			CurrentScreenIndex, CurrentStory.Screens.Num() - 1);
+
+		// Broadcast screen change event
+		OnScreenChanged.Broadcast(CurrentScreenIndex);
 
 		// For now, immediately complete transition and start first line
 		// In the future, Blueprint could signal when transition is complete
@@ -1186,6 +1185,9 @@ void UShortStorySubsystem::AdvanceToNextScreen()
 		}
 
 		UE_LOG(LogShortStory, Log, TEXT("AdvanceToNextScreen: Story completed"));
+
+		// Broadcast completion event
+		OnStoryCompleted.Broadcast();
 	}
 }
 
@@ -1244,6 +1246,78 @@ void UShortStorySubsystem::OnScreenTransitionComplete()
 }
 
 // ========================================
+// Screen Navigation
+// ========================================
+
+void UShortStorySubsystem::ResetScreenState(int32 TargetScreenIndex)
+{
+	const FStoryScreen& TargetScreen = CurrentStory.Screens[TargetScreenIndex];
+	CurrentLineIndex = 0;
+	ScreenElapsedTime = 0.0f;
+	LineElapsedTime = 0.0f;
+	PauseElapsedTime = 0.0f;
+	ProcessedTimedEventIndices.Empty();
+	LineStartTimes.Init(-1.0f, TargetScreen.Lines.Num());
+	TransitionElapsedTime = 0.0f;
+}
+
+bool UShortStorySubsystem::GoToScreen(int32 ScreenIndex)
+{
+	if (!bIsPlaying)
+	{
+		UE_LOG(LogShortStory, Warning, TEXT("GoToScreen: No story is currently playing"));
+		return false;
+	}
+
+	if (ScreenIndex < 0 || ScreenIndex >= CurrentStory.Screens.Num())
+	{
+		UE_LOG(LogShortStory, Warning, TEXT("GoToScreen: Invalid screen index %d (valid range: 0-%d)"),
+			ScreenIndex, CurrentStory.Screens.Num() - 1);
+		return false;
+	}
+
+	UE_LOG(LogShortStory, Log, TEXT("GoToScreen: Navigating from screen %d to %d"),
+		CurrentScreenIndex, ScreenIndex);
+
+	CurrentScreenIndex = ScreenIndex;
+	ResetScreenState(ScreenIndex);
+	CurrentState = EStoryPlaybackState::TransitioningScreen;
+	OnScreenChanged.Broadcast(CurrentScreenIndex);
+
+	return true;
+}
+
+bool UShortStorySubsystem::GoToScreenByName(const FString& ScreenName)
+{
+	if (!bIsPlaying)
+	{
+		UE_LOG(LogShortStory, Warning, TEXT("GoToScreenByName: No story is currently playing"));
+		return false;
+	}
+
+	for (int32 i = 0; i < CurrentStory.Screens.Num(); ++i)
+	{
+		if (CurrentStory.Screens[i].Name.Equals(ScreenName, ESearchCase::IgnoreCase))
+		{
+			return GoToScreen(i);
+		}
+	}
+
+	UE_LOG(LogShortStory, Warning, TEXT("GoToScreenByName: Screen name '%s' not found"), *ScreenName);
+	return false;
+}
+
+TArray<FString> UShortStorySubsystem::GetScreenNames() const
+{
+	TArray<FString> Names;
+	for (const FStoryScreen& Screen : CurrentStory.Screens)
+	{
+		Names.Add(Screen.Name);
+	}
+	return Names;
+}
+
+// ========================================
 // Debug Functions
 // ========================================
 
@@ -1285,21 +1359,9 @@ void UShortStorySubsystem::DebugSkipToPreviousScreen()
 	UE_LOG(LogShortStory, Display, TEXT("DebugSkipToPreviousScreen: Skipping from screen %d to %d"),
 		CurrentScreenIndex, CurrentScreenIndex - 1);
 
-	// Decrement screen index
 	CurrentScreenIndex--;
-
-	// Reset screen state
-	const FStoryScreen& PrevScreen = CurrentStory.Screens[CurrentScreenIndex];
-	CurrentLineIndex = 0;
-	ScreenElapsedTime = 0.0f;
-	LineElapsedTime = 0.0f;
-	PauseElapsedTime = 0.0f;
-	ProcessedTimedEventIndices.Empty();
-	LineStartTimes.Init(-1.0f, PrevScreen.Lines.Num());
-
-	// Set state to transitioning
+	ResetScreenState(CurrentScreenIndex);
 	CurrentState = EStoryPlaybackState::TransitioningScreen;
-	TransitionElapsedTime = 0.0f;
 }
 
 void UShortStorySubsystem::DebugJumpToScreen(int32 ScreenIndex)
@@ -1320,21 +1382,9 @@ void UShortStorySubsystem::DebugJumpToScreen(int32 ScreenIndex)
 	UE_LOG(LogShortStory, Display, TEXT("DebugJumpToScreen: Jumping from screen %d to %d"),
 		CurrentScreenIndex, ScreenIndex);
 
-	// Set screen index
 	CurrentScreenIndex = ScreenIndex;
-
-	// Reset screen state
-	const FStoryScreen& TargetScreen = CurrentStory.Screens[CurrentScreenIndex];
-	CurrentLineIndex = 0;
-	ScreenElapsedTime = 0.0f;
-	LineElapsedTime = 0.0f;
-	PauseElapsedTime = 0.0f;
-	ProcessedTimedEventIndices.Empty();
-	LineStartTimes.Init(-1.0f, TargetScreen.Lines.Num());
-
-	// Set state to transitioning
+	ResetScreenState(ScreenIndex);
 	CurrentState = EStoryPlaybackState::TransitioningScreen;
-	TransitionElapsedTime = 0.0f;
 }
 
 void UShortStorySubsystem::DebugSkipCurrentLine()

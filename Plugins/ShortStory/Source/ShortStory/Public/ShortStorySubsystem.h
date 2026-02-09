@@ -22,6 +22,16 @@ enum class EStoryPlaybackState : uint8
 };
 
 /**
+ * Delegate for story completion events
+ */
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnStoryCompleted);
+
+/**
+ * Delegate for screen change events
+ */
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnScreenChanged, int32, NewScreenIndex);
+
+/**
  * Game instance subsystem for loading, caching, and playing short stories (.tos files)
  *
  * Stories are parsed from text files at runtime and cached for fast repeated access.
@@ -45,6 +55,18 @@ public:
 	// USubsystem interface
 	virtual void Initialize(FSubsystemCollectionBase& Collection) override;
 	virtual void Deinitialize() override;
+
+	// ========================================
+	// Event Dispatchers
+	// ========================================
+
+	/** Broadcast when a story completes playback */
+	UPROPERTY(BlueprintAssignable, Category = "Narrative|Story Playback")
+	FOnStoryCompleted OnStoryCompleted;
+
+	/** Broadcast when advancing to a new screen */
+	UPROPERTY(BlueprintAssignable, Category = "Narrative|Story Playback")
+	FOnScreenChanged OnScreenChanged;
 	
 	/** Helper to load background texture from disk if needed */
 	void ResolveBackgroundTexture(FStoryScreen& Screen, const FString& BaseSearchPath = TEXT(""));
@@ -193,6 +215,31 @@ public:
 	 */
 	UFUNCTION(BlueprintPure, Category = "Narrative|Story Playback")
 	float GetFadeWindow() const { return FadeWindowSeconds; }
+
+	/**
+	 * Go to a specific screen by index during playback
+	 * Clears playback caches and transitions to the target screen
+	 * @param ScreenIndex The screen index to navigate to (0-based)
+	 * @return True if navigation succeeded, false if not playing or index out of range
+	 */
+	UFUNCTION(BlueprintCallable, Category = "Narrative|Story Playback")
+	bool GoToScreen(int32 ScreenIndex);
+
+	/**
+	 * Go to a specific screen by name during playback
+	 * Searches for a screen whose Name matches (case-insensitive)
+	 * @param ScreenName The screen name to navigate to (e.g., "SCREEN_01_INTRO")
+	 * @return True if navigation succeeded, false if not playing or name not found
+	 */
+	UFUNCTION(BlueprintCallable, Category = "Narrative|Story Playback")
+	bool GoToScreenByName(const FString& ScreenName);
+
+	/**
+	 * Get the names of all screens in the current story
+	 * @return Array of screen names (empty if no story is loaded)
+	 */
+	UFUNCTION(BlueprintPure, Category = "Narrative|Story Playback")
+	TArray<FString> GetScreenNames() const;
 
 	// ========================================
 	// Debug Functions
@@ -372,6 +419,12 @@ private:
 	// ========================================
 	// Playback Methods
 	// ========================================
+
+	/**
+	 * Reset playback caches for a screen jump (clears timers, event indices, line start times)
+	 * @param TargetScreenIndex The screen index being jumped to (used to size LineStartTimes)
+	 */
+	void ResetScreenState(int32 TargetScreenIndex);
 
 	/**
 	 * Tick function called by FTSTicker

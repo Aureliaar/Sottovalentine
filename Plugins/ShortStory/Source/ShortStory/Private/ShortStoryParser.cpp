@@ -107,6 +107,7 @@ bool UShortStoryParser::ParseStoryFromString(const FString& StoryText, FShortSto
 				CurrentScreenMetadata.Empty();
 				OutStory.Screens.AddDefaulted();
 				CurrentScreen = &OutStory.Screens.Last();
+				CurrentScreen->Name = SectionName;
 				continue;
 			}
 			else

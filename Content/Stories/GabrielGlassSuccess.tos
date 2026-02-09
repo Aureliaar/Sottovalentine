@@ -6,12 +6,12 @@ ost = Event:/Music/Stories/Orazio_Theme
 [SCREEN_7_GABRIEL_SPECCHIO_POS]
 transition = fade
 
-Invito Gabriel a mettersi davanti allo specchio. | left_to_right | speed=slow
+Invito Gabriel a mettersi davanti allo specchio. | typewriter | speed=slow
 “Lo adoro, è come piace a me. Ampio e grande.”
-Sogghigno, mi trattengo dall’aggiungere che è quello che immagino guardando i suoi pettorali da sotto la maglietta. | left_to_right | speed=slow
+Sogghigno, mi trattengo dall’aggiungere che è quello che immagino guardando i suoi pettorali da sotto la maglietta. | typewriter | speed=slow
 Tuttavia, come a voler esaudire il mio desiderio, il riflesso di Gabriel prende vita.
 Inizia a spogliarsi velocemente davanti a un Gabriel imbarazzato.
-“Fa sempre così?” | left_to_right | speed=slow
+“Fa sempre così?” | typewriter | speed=slow
 “Solo quando gli piace la persona che si specchia.”
-Mi rivolge un sorriso. | left_to_right | speed=slow
-Allora credo che farebbe lo stesso anche con te. Sei sexy!” | left_to_right | speed=slow
+Mi rivolge un sorriso. | typewriter | speed=slow
+Allora credo che farebbe lo stesso anche con te. Sei sexy!” | typewriter | speed=slow

@@ -7,6 +7,6 @@ transition = fade
 
 “Vedrai! Questo non te lo aspetti.”
 Sono entusiasta mentre prendo la sedia e mi ci accomodo al centro della stanza.
-Gabriel da parte sua mi guarda interdetto. | left_to_right | speed=slow
+Gabriel da parte sua mi guarda interdetto. | typewriter | speed=slow
 “Ah… carina! Purtroppo ho già la mia poltroncina.”
-La delusione mi pervade, credo di aver frainteso i segnali. | left_to_right | speed=slow
+La delusione mi pervade, credo di aver frainteso i segnali. | typewriter | speed=slow

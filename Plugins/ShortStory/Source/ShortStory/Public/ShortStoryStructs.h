@@ -194,6 +194,10 @@ struct FStoryScreen
 {
 	GENERATED_BODY()
 
+	/** Screen name from section header (e.g., "SCREEN_01_INTRO") */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Story")
+	FString Name;
+
 	/** Background texture for this screen (Asset) */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Story")
 	TSoftObjectPtr<UTexture2D> Background;

@@ -6,12 +6,12 @@ ost = Event:/Music/Stories/Orazio_Theme
 [SCREEN_7_NERIDA_SPECCHIO_POS]
 transition = fade
 
-“Penso che questo specchio sia perfetto per iniziare la giornata.” | left_to_right | speed=slow
-Nerida ci si mette davanti con una posa fiera, ma inaspettatamente dalla superficie riflettente fuoriesce una mano. | left_to_right | speed=slow
+“Penso che questo specchio sia perfetto per iniziare la giornata.” | typewriter | speed=slow
+Nerida ci si mette davanti con una posa fiera, ma inaspettatamente dalla superficie riflettente fuoriesce una mano. | typewriter | speed=slow
 “Ma cosa?”
-La donna rimane per un momento confusa quando l’indice punta l’indice contro di me. | left_to_right | speed=slow
-“La smetti di fissarla? Sei inquietante! Bambola credimi, trovi gente migliore al discount.” | left_to_right | speed=slow
+La donna rimane per un momento confusa quando l’indice punta l’indice contro di me. | typewriter | speed=slow
+“La smetti di fissarla? Sei inquietante! Bambola credimi, trovi gente migliore al discount.” | typewriter | speed=slow
 La giornalista scoppia a ridere tenendosi la pancia, io resto in silenzio senza saper come controbbattere.
-“Ma io adoro. In ginocchio Aidan!” | left_to_right | speed=slow
+“Ma io adoro. In ginocchio Aidan!” | typewriter | speed=slow
 Non posso fare a meno di eseguire l’ordine e così mi trovo a fissare i miei boia
-dal basso. | left_to_right | speed=slow
+dal basso. | typewriter | speed=slow
