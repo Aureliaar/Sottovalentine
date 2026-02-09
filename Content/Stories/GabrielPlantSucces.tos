@@ -14,4 +14,8 @@ Silenzio, gli carezzo una guancia.
 “Sai questa pianta si nutre in maniera particolare.” | typewriter | speed=slow
 La mia mano scende sulla sua gamba.
 “Mi fai vedere come si fa?” | typewriter | speed=slow
-“Certo!” | typewriter
+"Certo!" | typewriter
+
+[SCREEN_6_GABRIEL_PIANTA_POS_END]
+
+| pause=wait

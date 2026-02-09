@@ -182,6 +182,20 @@ public:
 	UFUNCTION(BlueprintPure, Category = "Narrative|Story Playback")
 	FStoryScreenState GetCurrentScreenState() const;
 
+	/**
+	 * Check if story is currently waiting for input (in Wait pause)
+	 */
+	UFUNCTION(BlueprintPure, Category = "Narrative|Story Playback")
+	bool IsWaitingForInput() const;
+
+	/**
+	 * Advance story from a Wait pause if currently waiting for input
+	 * This is the primary method for Blueprint widgets to call on player input
+	 * @return True if advanced, false if not in a Wait pause
+	 */
+	UFUNCTION(BlueprintCallable, Category = "Narrative|Story Playback")
+	bool ContinueStory();
+
 	// ========================================
 	// Timing Configuration
 	// ========================================
@@ -406,6 +420,9 @@ private:
 
 	/** Is playback paused? */
 	bool bIsPaused = false;
+
+	/** Is the current pause a "wait for input" pause? */
+	bool bIsWaitingForInput = false;
 
 	/** Current playback state */
 	EStoryPlaybackState CurrentState = EStoryPlaybackState::Idle;

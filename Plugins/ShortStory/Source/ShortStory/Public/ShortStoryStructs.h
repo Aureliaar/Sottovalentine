@@ -82,7 +82,8 @@ enum class EStoryPauseDuration : uint8
 	Short				UMETA(DisplayName = "Short (0.5s)"),
 	Standard			UMETA(DisplayName = "Standard (1.0s)"),
 	Long				UMETA(DisplayName = "Long (2.0s)"),
-	LineBreak			UMETA(DisplayName = "Implicit Line Break")
+	LineBreak			UMETA(DisplayName = "Implicit Line Break"),
+	Wait				UMETA(DisplayName = "Wait for Input")
 };
 
 /**

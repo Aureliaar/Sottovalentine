@@ -453,6 +453,7 @@ void UShortStorySubsystem::LoadTimingConfigs()
 				else if (Name == TEXT("Short")) PauseDurations.Add(EStoryPauseDuration::Short, Value);
 				else if (Name == TEXT("Standard")) PauseDurations.Add(EStoryPauseDuration::Standard, Value);
 				else if (Name == TEXT("Long")) PauseDurations.Add(EStoryPauseDuration::Long, Value);
+				else if (Name == TEXT("Wait")) PauseDurations.Add(EStoryPauseDuration::Wait, Value);
 			}
 			else if (Category == TEXT("Transition"))
 			{
@@ -757,6 +758,7 @@ void UShortStorySubsystem::StopStory()
 
 	bIsPlaying = false;
 	bIsPaused = false;
+	bIsWaitingForInput = false;
 	CurrentState = EStoryPlaybackState::Idle;
 	CurrentScreenIndex = 0;
 	CurrentLineIndex = 0;
@@ -1114,12 +1116,15 @@ void UShortStorySubsystem::StartPause()
 	// Get pause duration from loaded CSV config
 	PauseDuration = GetPauseDuration(CurrentLine.PauseDuration);
 
+	// Check if this is a wait-for-input pause
+	bIsWaitingForInput = (CurrentLine.PauseDuration == EStoryPauseDuration::Wait);
+
 	// Reset pause timer
 	PauseElapsedTime = 0.0f;
 	CurrentState = EStoryPlaybackState::PausingAfterLine;
 
-	UE_LOG(LogShortStory, Verbose, TEXT("StartPause: Starting pause of %.2fs after line %d"),
-		PauseDuration, CurrentLineIndex);
+	UE_LOG(LogShortStory, Verbose, TEXT("StartPause: Starting pause of %.2fs after line %d %s"),
+		PauseDuration, CurrentLineIndex, bIsWaitingForInput ? TEXT("(waiting for input)") : TEXT(""));
 }
 
 void UShortStorySubsystem::AdvanceToNextLineOrScreen()
@@ -1416,4 +1421,27 @@ void UShortStorySubsystem::DebugSkipCurrentLine()
 
 	// Immediately start pause
 	StartPause();
+}
+
+bool UShortStorySubsystem::IsWaitingForInput() const
+{
+	return bIsWaitingForInput && CurrentState == EStoryPlaybackState::PausingAfterLine;
+}
+
+bool UShortStorySubsystem::ContinueStory()
+{
+	if (!IsWaitingForInput())
+	{
+		return false;
+	}
+
+	UE_LOG(LogShortStory, Display, TEXT("ContinueStory: Advancing from Wait pause via player input"));
+
+	// Clear wait flag
+	bIsWaitingForInput = false;
+
+	// Immediately advance to next line/screen
+	AdvanceToNextLineOrScreen();
+
+	return true;
 }

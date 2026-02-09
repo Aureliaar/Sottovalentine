@@ -697,6 +697,11 @@ bool UShortStoryParser::ParsePauseDuration(const FString& PauseString, EStoryPau
 		OutPause = EStoryPauseDuration::Long;
 		return true;
 	}
+	else if (Lower.Equals(TEXT("wait")))
+	{
+		OutPause = EStoryPauseDuration::Wait;
+		return true;
+	}
 
 	return false;
 }
