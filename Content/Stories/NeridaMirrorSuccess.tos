@@ -2,20 +2,19 @@
 title = Sexantanove
 ost = Event:/Music/Stories/Orazio_Theme
 
-
 [SCREEN_7_NERIDA_SPECCHIO_POS]
 transition = fade
 
-“Penso che questo specchio sia perfetto per iniziare la giornata.” | typewriter | speed=slow
-Nerida ci si mette davanti con una posa fiera, ma inaspettatamente dalla superficie riflettente fuoriesce una mano. | typewriter | speed=slow
+“Penso che questo specchio sia perfetto per iniziare la giornata.” | typewriter | speed=fast
+Nerida ci si mette davanti con una posa fiera, ma inaspettatamente dalla superficie riflettente fuoriesce una mano. | typewriter | speed=fast
 “Ma cosa?”
-La donna rimane per un momento confusa quando l’indice punta l’indice contro di me. | typewriter | speed=slow
-“La smetti di fissarla? Sei inquietante! Bambola credimi, trovi gente migliore al discount.” | typewriter | speed=slow
+La donna rimane per un momento confusa quando l’indice punta l’indice contro di me. | typewriter | speed=fast
+“La smetti di fissarla? Sei inquietante! Bambola credimi, trovi gente migliore al discount.” | typewriter | speed=fast
 La giornalista scoppia a ridere tenendosi la pancia, io resto in silenzio senza saper come controbbattere.
-“Ma io adoro. In ginocchio Aidan!” | typewriter | speed=slow
+“Ma io adoro. In ginocchio Aidan!” | typewriter | speed=fast
 Non posso fare a meno di eseguire l’ordine e così mi trovo a fissare i miei boia
-dal basso. | typewriter | speed=slow
-
+dal basso. | typewriter | speed=fast
 [SCREEN_7_NERIDA_SPECCHIO_POS_END]
+transition = fade
 
-| pause=wait
+ | pause=wait

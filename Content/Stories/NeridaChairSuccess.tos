@@ -2,20 +2,19 @@
 title = Sexantanove
 ost = Event:/Music/Stories/Orazio_Theme
 
-
 [SCREEN_8_NERIDA_SEDIA_POS]
 transition = fade
 
 “Nerida per te ho pensato a questa sedia: semplice ma comoda.”
-La metto al centro della stanza e la giornalista la guarda con fare incuriosito. | typewriter | speed=slow
+La metto al centro della stanza e la giornalista la guarda con fare incuriosito. | typewriter | speed=fast
 “Vediamo quanto quanto è comoda!”
-La donna pesca il cellulare da una tasca dei pantaloni, poi digita qualcosa prima di lanciarlo sulla scrivania. | typewriter | speed=slow
+La donna pesca il cellulare da una tasca dei pantaloni, poi digita qualcosa prima di lanciarlo sulla scrivania. | typewriter | speed=fast
 Mi perdo completamente dietro ai movimenti sensuali di Nerida.
-Questa donna ha le capacità di una ballerina di burlesque, i vestiti cadono seguendo le note musicali. | typewriter | speed=slow
+Questa donna ha le capacità di una ballerina di burlesque, i vestiti cadono seguendo le note musicali. | typewriter | speed=fast
 La grazia di una pantera, è magnetica, mi trovo senza preavviso a terra per guardarla meglio.
 Provo a baciarle un piede ma lei mi calcia via divertita.
-“Stai al tuo posto, VERME!” | typewriter | speed=slow
-
+“Stai al tuo posto, VERME!” | typewriter | speed=fast
 [SCREEN_8_NERIDA_ARTWORK]
+transition = fade
 
-| pause=wait
+ | pause=wait

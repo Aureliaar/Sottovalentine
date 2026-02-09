@@ -5,17 +5,17 @@ ost = Event:/Music/Stories/Orazio_Theme
 [SCREEN_6_GABRIEL_PIANTA_POS]
 transition = fade
 
-“Ho pensato che tra le tue piante non potesse mancare questo esemplare.” | typewriter | speed=slow
+“Ho pensato che tra le tue piante non potesse mancare questo esemplare.” | typewriter | speed=fast
 Il giovane si avvicina ma, nonostante il sorriso gentile, sembra a disagio.
-“Grazie Aidan, ma… è una pianta carnivora?” | typewriter | speed=slow
+“Grazie Aidan, ma… è una pianta carnivora?” | typewriter | speed=fast
 Scuoto la testa e ridacchio.
-“Assolutamente no. So che sei molto impegnato e che hai poco tempo per rilassarti.” | typewriter | speed=slow
+“Assolutamente no. So che sei molto impegnato e che hai poco tempo per rilassarti.” | typewriter | speed=fast
 Silenzio, gli carezzo una guancia.
-“Sai questa pianta si nutre in maniera particolare.” | typewriter | speed=slow
+“Sai questa pianta si nutre in maniera particolare.” | typewriter | speed=fast
 La mia mano scende sulla sua gamba.
-“Mi fai vedere come si fa?” | typewriter | speed=slow
-"Certo!" | typewriter
-
+“Mi fai vedere come si fa?” | typewriter | speed=fast
+"Certo!" | typewriter | speed=fast
 [SCREEN_6_GABRIEL_PIANTA_POS_END]
+transition = fade
 
-| pause=wait
+ | pause=wait

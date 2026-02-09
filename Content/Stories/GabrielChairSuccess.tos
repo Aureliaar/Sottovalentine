@@ -2,26 +2,25 @@
 title = Sexantanove
 ost = Event:/Music/Stories/Orazio_Theme
 
-
 [SCREEN_8_GABRIEL_SEDIA_POS]
 transition = fade
 
 Sorrido portando al centro della stanza due sedie abbinate a un piccolo tavolino.
-“Mi raccomando usa queste sedie solo con il tavolino o si romperanno.” | typewriter | speed=slow
+“Mi raccomando usa queste sedie solo con il tavolino o si romperanno.” | typewriter | speed=fast
 Gli occhi del Golden retriever mi scrutano come se si aspattassero qualcosa da me.
 “Siediti! Voglio fare una cosa.”
-Eseguo l’ordine e il giovane mi stupisce. | typewriter | speed=slow
+Eseguo l’ordine e il giovane mi stupisce. | typewriter | speed=fast
 Dalla tracolla comincia a pescare diversi ingredienti vegetali e posarli sul
 tavolo.
-“Questo solitamente non lo faccio davanti ai clienti.” | typewriter | speed=slow
+“Questo solitamente non lo faccio davanti ai clienti.” | typewriter | speed=fast
 Mi rivolge un occhiolino.
 Dopodiché inizia a sussurrare parole arcane e una luce accecante
-riempie la stanza costringendomi a sringere le palpebre. | typewriter | speed=slow
+riempie la stanza costringendomi a sringere le palpebre. | typewriter | speed=fast
 Quando apro gli occhi è apparsa una torta dall'aspetto incredibile sul
 tavolino.
 Nel mentre Gabriel armeggia con un cucchiano pieno di tale leccornia.
-"Aidan apri la boccuccia che sta arrivando un aeroplanino!" | typewriter | speed=slow
-
+"Aidan apri la boccuccia che sta arrivando un aeroplanino!" | typewriter | speed=fast
 [SCREEN_8_GABRIEL_SEDIA_POS_END]
+transition = fade
 
-| pause=wait
+ | pause=wait

@@ -2,13 +2,12 @@
 title = Sexantanove
 ost = Event:/Music/Stories/Orazio_Theme
 
-
 [SCREEN_7_GABRIEL_SPECCHIO_NEG]
 transition = fade
 
 Invito Gabriel a mettersi davanti allo specchio.
-“Lo adoro, è come piace a me. Ampio e grande.” | typewriter | speed=slow
+“Lo adoro, è come piace a me. Ampio e grande.” | typewriter | speed=fast
 Sto per dargli ragione ma dalla superficie riflettente fuoriesce una mano
 gigante che lo indica.
-“Bel biondo! Togliti i pantaloni e te lo faccio vedere io cos’è ampio e grande.” | typewriter | speed=slow
-Gabriel diventa rosso, io sobbalzo: “Oh... no!” | typewriter | speed=slow
+“Bel biondo! Togliti i pantaloni e te lo faccio vedere io cos’è ampio e grande.” | typewriter | speed=fast
+Gabriel diventa rosso, io sobbalzo: “Oh... no!” | typewriter | speed=fast

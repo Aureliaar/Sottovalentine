@@ -1,8 +1,9 @@
 [STORY]
 title = Sexantanove
 ost = Event:/Music/Stories/Orazio_Theme
+
 [SCREEN_5_NERIDA_TOKTOK]
 transition = fade
 
 *Toc-toc*
-“Allora Aidan, che novità ci sono? Pronta a essere stupita!” | typewriter
+“Allora Aidan, che novità ci sono? Pronta a essere stupita!” | typewriter | speed=fast

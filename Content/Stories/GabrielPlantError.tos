@@ -5,13 +5,13 @@ ost = Event:/Music/Stories/Orazio_Theme
 [SCREEN_6_GABRIEL_PIANTA_NEG]
 transition = fade
 
-“Ho pensato che tra le tue piante non potesse mancare questo esemplare.” | typewriter | speed=slow
+“Ho pensato che tra le tue piante non potesse mancare questo esemplare.” | typewriter | speed=fast
 Il giovane si avvicina ma, nonostante il sorriso gentile, sembra a disagio.
-“Una pianta-liana?” | typewriter | speed=slow
+“Una pianta-liana?” | typewriter | speed=fast
 Sorrido: “Esatto.”
-Gabriel gonfia le guance innervosito. | typewriter | speed=slow
+Gabriel gonfia le guance innervosito. | typewriter | speed=fast
 “Sai che sono pericolosissime? Rischi che predino sconosciuti o animali.”
 Non avevo preventivato questa reazione.
-“Capisco tu lo abbia fatto per me, ma devo chiederti di portarla via!” | typewriter | speed=slow
+“Capisco tu lo abbia fatto per me, ma devo chiederti di portarla via!” | typewriter | speed=fast
 Annuisco.
-“Rimedierò.” | typewriter
+“Rimedierò.” | typewriter | speed=fast

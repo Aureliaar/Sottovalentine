@@ -2,20 +2,19 @@
 title = Sexantanove
 ost = Event:/Music/Stories/Orazio_Theme
 
-
 [SCREEN_7_GABRIEL_SPECCHIO_POS]
 transition = fade
 
-Invito Gabriel a mettersi davanti allo specchio. | typewriter | speed=slow
+Invito Gabriel a mettersi davanti allo specchio. | typewriter | speed=fast
 “Lo adoro, è come piace a me. Ampio e grande.”
-Sogghigno, mi trattengo dall’aggiungere che è quello che immagino guardando i suoi pettorali da sotto la maglietta. | typewriter | speed=slow
+Sogghigno, mi trattengo dall’aggiungere che è quello che immagino guardando i suoi pettorali da sotto la maglietta. | typewriter | speed=fast
 Tuttavia, come a voler esaudire il mio desiderio, il riflesso di Gabriel prende vita.
 Inizia a spogliarsi velocemente davanti a un Gabriel imbarazzato.
-“Fa sempre così?” | typewriter | speed=slow
+“Fa sempre così?” | typewriter | speed=fast
 “Solo quando gli piace la persona che si specchia.”
-Mi rivolge un sorriso. | typewriter | speed=slow
-Allora credo che farebbe lo stesso anche con te. Sei sexy!" | typewriter | speed=slow
-
+Mi rivolge un sorriso. | typewriter | speed=fast
+Allora credo che farebbe lo stesso anche con te. Sei sexy!" | typewriter | speed=fast
 [SCREEN_7_GABRIEL_SPECCHIO_POS_END]
+transition = fade
 
-| pause=wait
+ | pause=wait | speed=slow

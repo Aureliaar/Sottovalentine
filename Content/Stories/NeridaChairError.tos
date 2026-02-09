@@ -6,8 +6,8 @@ ost = Event:/Music/Stories/Orazio_Theme
 transition = fade
 
 Sorrido portando al centro della stanza due sedie abbinate a un piccolo tavolino.
-“Mi raccomando usa queste sedie solo con il tavolino o si romperanno.” | typewriter | speed=slow
+“Mi raccomando usa queste sedie solo con il tavolino o si romperanno.” | typewriter | speed=fast
 Nerida mi guarda palesemente scocciata.
 “Se pensi davvero che mi prenda un caffè con te o le mie amichette qui dentro ti
 sbagli di grosso.
-Questa stanza è già abbastanza piccola di suo!” | typewriter | speed=slow
+Questa stanza è già abbastanza piccola di suo!” | typewriter | speed=fast
