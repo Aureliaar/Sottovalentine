@@ -12,6 +12,13 @@
 #include "Interfaces/IPluginManager.h"
 #include "TextureResource.h"
 
+// Define profiling stats
+DEFINE_STAT(STAT_ShortStory_LoadStory);
+DEFINE_STAT(STAT_ShortStory_Tick);
+DEFINE_STAT(STAT_ShortStory_GetScreenState);
+DEFINE_STAT(STAT_ShortStory_StartLine);
+DEFINE_STAT(STAT_ShortStory_ParseStory);
+
 void UShortStorySubsystem::Initialize(FSubsystemCollectionBase& Collection)
 {
 	Super::Initialize(Collection);
@@ -51,6 +58,8 @@ void UShortStorySubsystem::Deinitialize()
 
 FShortStory UShortStorySubsystem::LoadStory(const FString& StoryFileName, bool bForceReload, bool& bSuccess)
 {
+	SCOPE_CYCLE_COUNTER(STAT_ShortStory_LoadStory);
+
 	bSuccess = false;
 
 	// Validate filename
@@ -791,13 +800,16 @@ void UShortStorySubsystem::SetPaused(bool bPause)
 
 FStoryLine UShortStorySubsystem::GetCurrentLine() const
 {
-	if (!bIsPlaying || CurrentScreenIndex >= CurrentStory.Screens.Num())
+	// Validate screen index
+	if (!bIsPlaying || CurrentScreenIndex < 0 || CurrentScreenIndex >= CurrentStory.Screens.Num())
 	{
 		return FStoryLine();
 	}
 
 	const FStoryScreen& CurrentScreen = CurrentStory.Screens[CurrentScreenIndex];
-	if (CurrentLineIndex >= CurrentScreen.Lines.Num())
+
+	// Validate line index
+	if (CurrentLineIndex < 0 || CurrentLineIndex >= CurrentScreen.Lines.Num())
 	{
 		return FStoryLine();
 	}
@@ -807,7 +819,8 @@ FStoryLine UShortStorySubsystem::GetCurrentLine() const
 
 FStoryScreen UShortStorySubsystem::GetCurrentScreen() const
 {
-	if (!bIsPlaying || CurrentScreenIndex >= CurrentStory.Screens.Num())
+	// Validate screen index
+	if (!bIsPlaying || CurrentScreenIndex < 0 || CurrentScreenIndex >= CurrentStory.Screens.Num())
 	{
 		return FStoryScreen();
 	}
@@ -817,6 +830,8 @@ FStoryScreen UShortStorySubsystem::GetCurrentScreen() const
 
 FStoryScreenState UShortStorySubsystem::GetCurrentScreenState() const
 {
+	SCOPE_CYCLE_COUNTER(STAT_ShortStory_GetScreenState);
+
 	FStoryScreenState State;
 
 	// Set basic state info
@@ -826,7 +841,7 @@ FStoryScreenState UShortStorySubsystem::GetCurrentScreenState() const
 	State.CurrentLineIndex = CurrentLineIndex;
 
 	// If not playing or invalid state, return empty
-	if (!bIsPlaying || CurrentScreenIndex >= CurrentStory.Screens.Num())
+	if (!bIsPlaying || CurrentScreenIndex < 0 || CurrentScreenIndex >= CurrentStory.Screens.Num())
 	{
 		return State;
 	}
@@ -928,6 +943,8 @@ FStoryScreenState UShortStorySubsystem::GetCurrentScreenState() const
 
 bool UShortStorySubsystem::Tick(float DeltaTime)
 {
+	SCOPE_CYCLE_COUNTER(STAT_ShortStory_Tick);
+
 	if (!bIsPlaying || bIsPaused)
 	{
 		return true; // Keep ticking
@@ -987,16 +1004,21 @@ bool UShortStorySubsystem::Tick(float DeltaTime)
 
 void UShortStorySubsystem::StartLine(int32 LineIndex)
 {
-	if (CurrentScreenIndex >= CurrentStory.Screens.Num())
+	SCOPE_CYCLE_COUNTER(STAT_ShortStory_StartLine);
+
+	// Validate screen index (both negative and out of bounds)
+	if (CurrentScreenIndex < 0 || CurrentScreenIndex >= CurrentStory.Screens.Num())
 	{
-		UE_LOG(LogShortStory, Error, TEXT("StartLine: Invalid screen index %d"), CurrentScreenIndex);
+		UE_LOG(LogShortStory, Error, TEXT("StartLine: Invalid screen index %d (valid range: 0-%d)"),
+			CurrentScreenIndex, CurrentStory.Screens.Num() - 1);
 		return;
 	}
 
 	const FStoryScreen& CurrentScreen = CurrentStory.Screens[CurrentScreenIndex];
-	if (LineIndex >= CurrentScreen.Lines.Num())
+	if (LineIndex < 0 || LineIndex >= CurrentScreen.Lines.Num())
 	{
-		UE_LOG(LogShortStory, Error, TEXT("StartLine: Invalid line index %d on screen %d"), LineIndex, CurrentScreenIndex);
+		UE_LOG(LogShortStory, Error, TEXT("StartLine: Invalid line index %d on screen %d (valid range: 0-%d)"),
+			LineIndex, CurrentScreenIndex, CurrentScreen.Lines.Num() - 1);
 		return;
 	}
 
@@ -1129,8 +1151,10 @@ void UShortStorySubsystem::StartPause()
 
 void UShortStorySubsystem::AdvanceToNextLineOrScreen()
 {
-	if (CurrentScreenIndex >= CurrentStory.Screens.Num())
+	// Validate screen index
+	if (CurrentScreenIndex < 0 || CurrentScreenIndex >= CurrentStory.Screens.Num())
 	{
+		UE_LOG(LogShortStory, Error, TEXT("AdvanceToNextLineOrScreen: Invalid screen index %d"), CurrentScreenIndex);
 		return;
 	}
 
@@ -1154,31 +1178,10 @@ void UShortStorySubsystem::AdvanceToNextLineOrScreen()
 
 void UShortStorySubsystem::AdvanceToNextScreen()
 {
-	// Increment screen index
-	CurrentScreenIndex++;
-
-	// Check if more screens
-	if (CurrentScreenIndex < CurrentStory.Screens.Num())
+	// Check if we can advance before incrementing
+	if (CurrentScreenIndex + 1 >= CurrentStory.Screens.Num())
 	{
-		// More screens, start next screen
-		ResetScreenState(CurrentScreenIndex);
-
-		// Set state to transitioning
-		CurrentState = EStoryPlaybackState::TransitioningScreen;
-
-		UE_LOG(LogShortStory, Log, TEXT("AdvanceToNextScreen: Advanced to screen %d/%d"),
-			CurrentScreenIndex, CurrentStory.Screens.Num() - 1);
-
-		// Broadcast screen change event
-		OnScreenChanged.Broadcast(CurrentScreenIndex);
-
-		// For now, immediately complete transition and start first line
-		// In the future, Blueprint could signal when transition is complete
-		// OnScreenTransitionComplete() will be called next tick
-	}
-	else
-	{
-		// Story complete
+		// Story complete - we're already on or past the last screen
 		bIsPlaying = false;
 		CurrentState = EStoryPlaybackState::Completed;
 
@@ -1193,7 +1196,21 @@ void UShortStorySubsystem::AdvanceToNextScreen()
 
 		// Broadcast completion event
 		OnStoryCompleted.Broadcast();
+		return;
 	}
+
+	// Increment screen index (now guaranteed to be valid)
+	CurrentScreenIndex++;
+
+	// Reset screen state and transition
+	ResetScreenState(CurrentScreenIndex);
+	CurrentState = EStoryPlaybackState::TransitioningScreen;
+
+	UE_LOG(LogShortStory, Log, TEXT("AdvanceToNextScreen: Advanced to screen %d/%d"),
+		CurrentScreenIndex, CurrentStory.Screens.Num() - 1);
+
+	// Broadcast screen change event
+	OnScreenChanged.Broadcast(CurrentScreenIndex);
 }
 
 void UShortStorySubsystem::ProcessTimedEvents()
@@ -1233,8 +1250,10 @@ void UShortStorySubsystem::OnScreenTransitionComplete()
 	// Called when screen transition animation completes in Blueprint
 	// For now, immediately start first line of new screen
 
-	if (CurrentScreenIndex >= CurrentStory.Screens.Num())
+	// Validate screen index
+	if (CurrentScreenIndex < 0 || CurrentScreenIndex >= CurrentStory.Screens.Num())
 	{
+		UE_LOG(LogShortStory, Error, TEXT("OnScreenTransitionComplete: Invalid screen index %d"), CurrentScreenIndex);
 		return;
 	}
 
@@ -1256,6 +1275,14 @@ void UShortStorySubsystem::OnScreenTransitionComplete()
 
 void UShortStorySubsystem::ResetScreenState(int32 TargetScreenIndex)
 {
+	// Validate screen index before accessing array
+	if (TargetScreenIndex < 0 || TargetScreenIndex >= CurrentStory.Screens.Num())
+	{
+		UE_LOG(LogShortStory, Error, TEXT("ResetScreenState: Invalid screen index %d (valid range: 0-%d)"),
+			TargetScreenIndex, CurrentStory.Screens.Num() - 1);
+		return;
+	}
+
 	const FStoryScreen& TargetScreen = CurrentStory.Screens[TargetScreenIndex];
 	CurrentLineIndex = 0;
 	ScreenElapsedTime = 0.0f;
@@ -1334,17 +1361,47 @@ void UShortStorySubsystem::DebugSkipToNextScreen()
 		return;
 	}
 
+	// If on last screen, complete the story
 	if (CurrentScreenIndex >= CurrentStory.Screens.Num() - 1)
 	{
-		UE_LOG(LogShortStory, Warning, TEXT("DebugSkipToNextScreen: Already at last screen (%d/%d)"),
-			CurrentScreenIndex, CurrentStory.Screens.Num() - 1);
+		UE_LOG(LogShortStory, Display, TEXT("DebugSkipToNextScreen: On last screen, completing story"));
+
+		// Story complete
+		bIsPlaying = false;
+		CurrentState = EStoryPlaybackState::Completed;
+
+		// Unregister ticker
+		if (TickerHandle.IsValid())
+		{
+			FTSTicker::GetCoreTicker().RemoveTicker(TickerHandle);
+			TickerHandle.Reset();
+		}
+
+		// Broadcast completion event
+		OnStoryCompleted.Broadcast();
 		return;
 	}
 
 	UE_LOG(LogShortStory, Display, TEXT("DebugSkipToNextScreen: Skipping from screen %d to %d"),
 		CurrentScreenIndex, CurrentScreenIndex + 1);
 
-	AdvanceToNextScreen();
+	// Increment and reset state
+	CurrentScreenIndex++;
+	ResetScreenState(CurrentScreenIndex);
+
+	// Skip transition - immediately start first line
+	const FStoryScreen& CurrentScreen = CurrentStory.Screens[CurrentScreenIndex];
+	if (CurrentScreen.Lines.Num() > 0)
+	{
+		StartLine(0);
+	}
+	else
+	{
+		UE_LOG(LogShortStory, Warning, TEXT("DebugSkipToNextScreen: Screen %d has no lines"), CurrentScreenIndex);
+	}
+
+	// Broadcast screen change
+	OnScreenChanged.Broadcast(CurrentScreenIndex);
 }
 
 void UShortStorySubsystem::DebugSkipToPreviousScreen()
@@ -1361,12 +1418,33 @@ void UShortStorySubsystem::DebugSkipToPreviousScreen()
 		return;
 	}
 
+	// Additional safety: validate we have screens
+	if (CurrentStory.Screens.Num() == 0)
+	{
+		UE_LOG(LogShortStory, Error, TEXT("DebugSkipToPreviousScreen: No screens in story"));
+		return;
+	}
+
 	UE_LOG(LogShortStory, Display, TEXT("DebugSkipToPreviousScreen: Skipping from screen %d to %d"),
 		CurrentScreenIndex, CurrentScreenIndex - 1);
 
+	// Decrement and reset state
 	CurrentScreenIndex--;
 	ResetScreenState(CurrentScreenIndex);
-	CurrentState = EStoryPlaybackState::TransitioningScreen;
+
+	// Skip transition - immediately start first line
+	const FStoryScreen& CurrentScreen = CurrentStory.Screens[CurrentScreenIndex];
+	if (CurrentScreen.Lines.Num() > 0)
+	{
+		StartLine(0);
+	}
+	else
+	{
+		UE_LOG(LogShortStory, Warning, TEXT("DebugSkipToPreviousScreen: Screen %d has no lines"), CurrentScreenIndex);
+	}
+
+	// Broadcast screen change
+	OnScreenChanged.Broadcast(CurrentScreenIndex);
 }
 
 void UShortStorySubsystem::DebugJumpToScreen(int32 ScreenIndex)
@@ -1387,9 +1465,23 @@ void UShortStorySubsystem::DebugJumpToScreen(int32 ScreenIndex)
 	UE_LOG(LogShortStory, Display, TEXT("DebugJumpToScreen: Jumping from screen %d to %d"),
 		CurrentScreenIndex, ScreenIndex);
 
+	// Jump to screen and reset state
 	CurrentScreenIndex = ScreenIndex;
 	ResetScreenState(ScreenIndex);
-	CurrentState = EStoryPlaybackState::TransitioningScreen;
+
+	// Skip transition - immediately start first line
+	const FStoryScreen& CurrentScreen = CurrentStory.Screens[CurrentScreenIndex];
+	if (CurrentScreen.Lines.Num() > 0)
+	{
+		StartLine(0);
+	}
+	else
+	{
+		UE_LOG(LogShortStory, Warning, TEXT("DebugJumpToScreen: Screen %d has no lines"), CurrentScreenIndex);
+	}
+
+	// Broadcast screen change
+	OnScreenChanged.Broadcast(CurrentScreenIndex);
 }
 
 void UShortStorySubsystem::DebugSkipCurrentLine()
