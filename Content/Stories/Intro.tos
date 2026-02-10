@@ -16,6 +16,7 @@ Domani sarà l’ultimo giorno disponibile e mi manca solo un appuntamento per l
 stanza n. 69. | typewriter | speed=fast
 Ho selezionato due ottimi candidati, ma chi scegliere?
 Un brivido mi percorre la schiena mentre la mia mente torna al primo incontro. | typewriter | speed=fast
+
 [SCREEN_02_FLASHBACK_NERIDA]
 background = nerida.png
 transition = crossfade
@@ -46,8 +47,9 @@ al mio orecchio. | typewriter | speed=fast
 Il tono da bimba capricciosa dona in modo particolare alla sua immagine di pantera.
 Dal canto mio sorrido, sono sempre stato in grado di inquadrare le persone e so perfettamente come provvedere. | typewriter | speed=fast
 “Non ti preoccupare Nerida, ci penso io!” | typewriter | speed=fast
+
 [SCREEN_03_FLASHBACK_GABRIEL]
-background = aidan.png
+background = gabriel.png
 transition = crossfade
 
 “Devo dirtelo Aidan, la cucina in comune mi ha proprio conquistato.” | typewriter | speed=fast
@@ -69,6 +71,7 @@ Mi sento improvvisamente sereno e rilassato come se le endorfine fossero salite 
 Mi abbraccia di getto, davvero troppo espansivo, davvero troppo piacevole. | typewriter | speed=fast
 “Credi di poter rendere questo posto pazzesco?” | typewriter | speed=fast
 “Mi offendi Gabriel… ovvio che lo renderò tale.” | typewriter | speed=fast
+
 [SCREEN_4_INTRO_AIDAN]
 transition = fade
 
