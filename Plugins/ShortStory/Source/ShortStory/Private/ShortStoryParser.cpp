@@ -5,9 +5,12 @@
 #include "Misc/FileHelper.h"
 #include "Misc/Paths.h"
 #include "HAL/PlatformFileManager.h"
+#include "ShortStorySubsystem.h"
 
 bool UShortStoryParser::ParseStoryFile(const FString& StoryFilePath, FShortStory& OutStory, TArray<FString>& OutErrors, int32 MaxLineLength)
 {
+	SCOPE_CYCLE_COUNTER(STAT_ShortStory_ParseStory);
+
 	OutErrors.Empty();
 
 	// Check if file exists

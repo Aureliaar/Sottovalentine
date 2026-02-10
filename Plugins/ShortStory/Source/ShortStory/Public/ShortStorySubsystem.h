@@ -31,6 +31,14 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnStoryCompleted);
  */
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnScreenChanged, int32, NewScreenIndex);
 
+// Profiling stats
+DECLARE_STATS_GROUP(TEXT("ShortStory"), STATGROUP_ShortStory, STATCAT_Advanced);
+DECLARE_CYCLE_STAT_EXTERN(TEXT("LoadStory"), STAT_ShortStory_LoadStory, STATGROUP_ShortStory, SHORTSTORY_API);
+DECLARE_CYCLE_STAT_EXTERN(TEXT("Tick"), STAT_ShortStory_Tick, STATGROUP_ShortStory, SHORTSTORY_API);
+DECLARE_CYCLE_STAT_EXTERN(TEXT("GetCurrentScreenState"), STAT_ShortStory_GetScreenState, STATGROUP_ShortStory, SHORTSTORY_API);
+DECLARE_CYCLE_STAT_EXTERN(TEXT("StartLine"), STAT_ShortStory_StartLine, STATGROUP_ShortStory, SHORTSTORY_API);
+DECLARE_CYCLE_STAT_EXTERN(TEXT("ParseStory"), STAT_ShortStory_ParseStory, STATGROUP_ShortStory, SHORTSTORY_API);
+
 /**
  * Game instance subsystem for loading, caching, and playing short stories (.tos files)
  *

@@ -117,3 +117,4 @@ Tools/ShortStoryEditor/dist_electron/*
 Data/DataTables/*
 Data/DataTables/*.json
 Plugins/ShortStory/Editor/*
+Packaged/*
