@@ -6,11 +6,10 @@ ost = Event:/Music/Stories/Orazio_Theme
 background = T_NeridaPortraitAngry.png
 transition = fade
 
-Non posso far meno di eseguire l’ordine e così mi trovo a fissare i miei boia dal basso. | typewriter | speed=fast
 Nerida ci si mette davanti con una posa fiera, ma il suo volto convinto e sorridente si trasforma in una smorfia.
-“Ma cosa…?” | typewriter | speed=fast
+“Ma cosa…?” | typewriter
 Mi affaccio e con orrore scopro l’immagine della giornalista cambiare forma.
 I suoi seni diventano due mongolfiere.
-“Che scherzo è mai questo?” | typewriter | speed=fast
+“Che scherzo è mai questo?” | typewriter
 Si gira verso di me.
-“La pagherai!” | typewriter | speed=fast
+“La pagherai!” | typewriter | pause=standard

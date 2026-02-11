@@ -7,10 +7,10 @@ background = T_NeridaPortraitAngry.png
 transition = fade
 
 Nerida mi guarda scocciata da dietro la cortina del fumo di sigaretta, il suo
-piede tamburella sul pavimento. | typewriter | speed=fast
+piede tamburella sul pavimento. | typewriter
 “Sei davvero una delusione.”
-Non fiato, sono completamente in imbarazzo per il mio fallimento. | typewriter | speed=fast
+Non fiato, sono completamente in imbarazzo per il mio fallimento. | typewriter
 “Di certo non puoi soddisfarmi con così poco.”
-Detto ciò la giornalista gira i tacchi e sparisce sbattendo la porta. | typewriter | speed=fast
+Detto ciò la giornalista gira i tacchi e sparisce sbattendo la porta. | typewriter
 Mi restano solo due consapevolezze: la prima è che non vi saranno promozioni.
-La seconda è che la penna ferisce più della spada. | typewriter | speed=fast
+La seconda è che la penna ferisce più della spada. | typewriter | pause=standard

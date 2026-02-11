@@ -7,20 +7,20 @@ background = nerida.png
 transition = fade
 
 “Cazzo Aidan! Ci sai proprio fare con il tuo lavoro!”
-La giornalista tira una boccata della sua sigaretta. | typewriter | speed=fast
-“Grazie cara, come potevo sbagliare con una musa come te?” | typewriter | speed=fast
-“La prendo! Voglio questa stanza!" | typewriter | speed=fast
+La giornalista tira una boccata della sua sigaretta. | typewriter
+“Grazie cara, come potevo sbagliare con una musa come te?” | typewriter
+“La prendo! Voglio questa stanza!" | typewriter
 “I documenti sono già…”
-La donna sputa un po’ di fumo e schiaccia la cicca nel portacenere. | typewriter | speed=fast
+La donna sputa un po’ di fumo e schiaccia la cicca nel posacenere. | typewriter
 “No, no... bel caster! Se vuoi che io firmi devo prima provare il letto.”
 Uno a uno gli indumenti della donna iniziano a cadere.
-Sono succube di questo spettacolo e non ho la minima intenzione di lasciarle tutto il divertimento. | typewriter | speed=fast
+Sono succube di questo spettacolo e non ho la minima intenzione di lasciarle tutto il divertimento. | typewriter
 La seguo, ci gioco, è lei a dettare le regole.
 Tutto finisce dopo non so quanto tempo, mi imbarazza quasi vederla così nuda.
 Prendo il mio cappello e glielo metto addosso per coprirla almeno un po’.
-Quasi mi scordo che questo affito per me significa una promozione. | typewriter | speed=fast
-“Nerida, qualche volta ti va di uscire con me?” | typewriter | speed=fast
-Scoppia a ridere: "Forse!" | typewriter | speed=fast
+Quasi mi scordo che questo affito per me significa una promozione. | typewriter
+“Nerida, qualche volta ti va di uscire con me?” | typewriter | speed=slow
+Scoppia a ridere: "Forse!" | typewriter | speed=slow | pause=standard
 [SCREEN_9_NERIDA_GOODENDING_END]
 transition = fade
 

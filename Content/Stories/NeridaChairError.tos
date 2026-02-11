@@ -7,7 +7,9 @@ background = T_NeridaPortraitAngry.png
 transition = fade
 
 Sorrido portando al centro della stanza due sedie abbinate a un piccolo tavolino.
-“Mi raccomando usa queste sedie solo con il tavolino o si romperanno.” | typewriter | speed=fast
+“Mi raccomando usa queste sedie solo con il tavolino o si romperanno.” | typewriter
 Nerida mi guarda palesemente scocciata.
-“Se pensi davvero che mi prenda un caffè con te o le mie amichette qui dentro ti sbagli di grosso.
-Questa stanza è già abbastanza piccola di suo!” | typewriter | speed=fast
+“Se pensi davvero che mi prenda un caffè con te o le mie amichette qui dentro ti
+sbagli di grosso." | typewriter
+Provo a scusarmi ma lei continua imperterrita. | typewriter
+"Questa stanza è già abbastanza piccola di suo!” | typewriter | pause=standard

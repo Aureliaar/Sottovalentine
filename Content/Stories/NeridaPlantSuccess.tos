@@ -7,24 +7,24 @@ background = nerida.png
 transition = fade
 
 “Non appena l’ho vista ho pensato potesse essere di tuo gradimento.”
-Con passi felini Nerida si avvicina alla pianta. | typewriter | speed=fast
+Con passi felini Nerida si avvicina alla pianta. | typewriter
 “Incredibile, una pianta-liana. Sai che è ottima per fare da guardia?”
-Il tono della donna assume una sfumatura maliziosa.
-“Dopo che la piantina prende l’intruso puoi fargli tutto ciò che vuoi.” | typewriter | speed=fast
+Il tono della donna assume una sfumatura maliziosa. | typewriter
+“Dopo che la piantina prende l’intruso puoi fargli tutto ciò che vuoi.” | typewriter
 “Tutto?”
-Scoppia a ridere mentre si sfila i pantaloni. | typewriter | speed=fast
+Scoppia a ridere mentre si sfila i pantaloni. | typewriter
 “Tutto… provala su di me!”
-A quel comando agisco automaticamente. | typewriter | speed=fast
+A quel comando agisco automaticamente. | typewriter
 Avrei eseguito quell’ordine in ogni caso e guardandola negli occhi so che Nerida
 ne è consapevole. Non credo che userebbe, o sarebbe in grado di usare, i suoi
-poteri contro la volontà della sua preda.
+poteri contro la volontà della sua preda. | typewriter
 Probabilmente il suo è solo un modo per dare una spinta, oppure sa che avrei
 esitato e per una donna come lei questa sarebbe un’insubordinazione
-intollerabile. | typewriter | speed=fast
+intollerabile. | typewriter
 “Sei davvero ubbidiente Aidan.”
-Sussurra mentre le liane, mosse dalla mia bacchetta, avvolgono il suo corpo. | typewriter | speed=fast
+Sussurra mentre le liane, mosse dalla mia bacchetta, avvolgono il suo corpo. | typewriter
 “Solo per te!”
-Davvero sento l'eccitazione in un momento come questo? | typewriter | speed=fast
+Davvero sento l'eccitazione in un momento come questo? | typewriter | speed=slow | pause=standard
 [SCREEN_6_NERIDA_PIANTA_POS_END]
 transition = fade
 
