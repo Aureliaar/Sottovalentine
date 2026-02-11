@@ -3,6 +3,7 @@ title = Sexantanove
 ost = Event:/Music/Stories/Orazio_Theme
 
 [SCREEN_7_GABRIEL_SPECCHIO_NEG]
+background = T_GabrielPortraitAngry.png
 transition = fade
 
 Invito Gabriel a mettersi davanti allo specchio.

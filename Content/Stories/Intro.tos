@@ -17,7 +17,7 @@ stanza n. 69. | typewriter | speed=fast
 Ho selezionato due ottimi candidati, ma chi scegliere?
 Un brivido mi percorre la schiena mentre la mia mente torna al primo incontro. | typewriter | speed=fast
 
-[SCREEN_02_FLASHBACK_NERIDA]
+[SCREEN_02A_FLASHBACK_NERIDA]
 background = nerida.png
 transition = crossfade
 
@@ -32,6 +32,10 @@ Sembra star parlando più con se stessa che davvero con me.
 La donna visibilmente irritata mi rivolge un sorriso obliquo, interrompendomi.
 “No! Tu non hai idea di cosa io stia parlando.” | typewriter | speed=fast
 Le sue parole mi risuonano nella testa e mi trovo ad annuire: “Hai ragione, non lo so!”
+
+[SCREEN_02B_FLASHBACK_NERIDA]
+background = nerida.png
+transition = crossfade
 Solo dopo qualche secondo mi rendo conto che ha utilizzato qualche sorta di potere psichico per piegare la mia volontà. | typewriter | speed=fast
 Imbarazzante... ma mi è piaciuto! | typewriter | speed=fast
 “Ovvio che non lo sai!  L’ispirazione che ti spinge a scrivere per ore e ore con

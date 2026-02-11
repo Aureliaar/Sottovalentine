@@ -3,6 +3,7 @@ title = Sexantanove
 ost = Event:/Music/Stories/Orazio_Theme
 
 [SCREEN_10_NERIDA_BADENDING]
+background = T_NeridaPortraitAngry.png
 transition = fade
 
 Nerida mi guarda scocciata da dietro la cortina del fumo di sigaretta, il suo

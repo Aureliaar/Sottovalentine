@@ -3,6 +3,7 @@ title = Sexantanove
 ost = Event:/Music/Stories/Orazio_Theme
 
 [SCREEN_8_GABRIEL_SEDIA_POS]
+background = gabriel.png
 transition = fade
 
 Sorrido portando al centro della stanza due sedie abbinate a un piccolo tavolino.

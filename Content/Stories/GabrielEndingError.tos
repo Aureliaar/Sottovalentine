@@ -3,6 +3,7 @@ title = Sexantanove
 ost = Event:/Music/Stories/Orazio_Theme
 
 [SCREEN_10_GABRIEL_BADENDING]
+background = T_GabrielPortraitAngry.png
 transition = fade
 
 Il biondino si tortura le mani e continua a guardare il pavimento evitando il mio sguardo.

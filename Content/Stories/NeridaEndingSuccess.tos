@@ -3,6 +3,7 @@ title = Sexantanove
 ost = Event:/Music/Stories/Orazio_Theme
 
 [SCREEN_9_NERIDA_GOODENDING]
+background = nerida.png
 transition = fade
 
 “Cazzo Aidan! Ci sai proprio fare con il tuo lavoro!”

@@ -3,6 +3,7 @@ title = Sexantanove
 ost = Event:/Music/Stories/Orazio_Theme
 
 [SCREEN_7_NERIDA_SPECCHIO_NEG]
+background = T_NeridaPortraitAngry.png
 transition = fade
 
 Non posso far meno di eseguire l’ordine e così mi trovo a fissare i miei boia dal basso. | typewriter | speed=fast

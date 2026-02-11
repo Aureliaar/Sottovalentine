@@ -3,6 +3,7 @@ title = Sexantanove
 ost = Event:/Music/Stories/Orazio_Theme
 
 [SCREEN_8_GABRIEL_SEDIA_NEG]
+background = T_GabrielPortraitAngry.png
 transition = fade
 
 “Vedrai! Questo non te lo aspetti.”

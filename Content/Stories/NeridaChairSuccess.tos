@@ -3,6 +3,7 @@ title = Sexantanove
 ost = Event:/Music/Stories/Orazio_Theme
 
 [SCREEN_8_NERIDA_SEDIA_POS]
+background = nerida.png
 transition = fade
 
 “Nerida per te ho pensato a questa sedia: semplice ma comoda.”

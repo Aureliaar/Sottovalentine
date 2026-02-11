@@ -3,6 +3,7 @@ title = Sexantanove
 ost = Event:/Music/Stories/Orazio_Theme
 
 [SCREEN_6_NERIDA_PIANTA_NEG]
+background = T_NeridaPortraitAngry.png
 transition = fade
 
 “Non appena l’ho vista ho pensato potesse essere di tuo gradimento.”

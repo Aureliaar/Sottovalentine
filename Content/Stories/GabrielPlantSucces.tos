@@ -3,6 +3,7 @@ title = Sexantanove
 ost = Event:/Music/Stories/Orazio_Theme
 
 [SCREEN_6_GABRIEL_PIANTA_POS]
+background = gabriel.png
 transition = fade
 
 “Ho pensato che tra le tue piante non potesse mancare questo esemplare.” | typewriter | speed=fast

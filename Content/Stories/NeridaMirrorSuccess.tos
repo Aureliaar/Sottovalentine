@@ -3,6 +3,7 @@ title = Sexantanove
 ost = Event:/Music/Stories/Orazio_Theme
 
 [SCREEN_7_NERIDA_SPECCHIO_POS]
+background = nerida.png
 transition = fade
 
 “Penso che questo specchio sia perfetto per iniziare la giornata.” | typewriter | speed=fast
