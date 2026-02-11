@@ -72,11 +72,11 @@ Indica un punto vicino alla finestra.
 Lo incalzo.
 “Ingredienti essenziali per la cucina vegana?” | typewriter | speed=fast
 Annuisce compiaciuto ed emozionato. | typewriter | speed=fast | pause=short
-[SCREEN_6]
+[SCREEN_6_FLASHBACK_GABRIEL]
 background = gabriel.png
-transition = fade
+transition = crossfade
 
-Poi tira fuori dalla tasca un cioccolatino e
+Poi tira fuori dalla tasca un cioccolatino e 
 me lo porta direttamente alla bocca: “Prova!” | typewriter | speed=fast
 La cioccolata mi si scioglie sul palato, sembra veramente al latte.
 Intanto quel golden retriever boy mi scruta con occhi grandi e curiosi. | typewriter | speed=fast
