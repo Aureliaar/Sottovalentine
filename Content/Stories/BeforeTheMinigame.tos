@@ -1,0 +1,23 @@
+[STORY]
+title = Sexantanove
+ost = Event:/Music/Stories/Orazio_Theme
+
+[SCREEN_4_INTRO_AIDAN]
+transition = fade
+
+Arrivo all’appuntamento con un’ora buona di anticipo rispetto al cliente. | typewriter | speed=fast
+Come apro la porta il caos mi travolge. Prevedibile!
+Gli incanti caotici sono sempre un’arma a doppio taglio. 
+Chi meglio di un caster caotico come me può saperlo? | typewriter | speed=fast
+La mia abilità consiste nello studiare una o più persone, per un massimo di tre individui, per poi materializzare tre oggetti per ognuna di loro. | typewriter | speed=fast
+In alcuni casi da una carta si potrebbe materializze un set di oggetti, ad esempio pennello e tavola incorporata di colori.
+In tal caso l’insieme di oggetti dovrà essere utilizzato insieme, o si romperà. | typewriter | speed=fast
+Il procedimento inizia la sera: in primis studio un determinato profilo. | typewriter | speed=fast
+Poi, durante la notte, il mio subconscio crea delle carte illustrate che
+si materializzano in un luogo prestabilito da me. | typewriter | speed=fast
+Talvolta,  come in questo caso, creando un po' di disordine. | typewriter | speed=fast
+Ora devo solo trovarle e far prendere loro forma.
+Necessitando di un catalizzatore userò la mia
+bacchetta. | typewriter | speed=fast
+Poi diciamocelo, affittare stanze con bacchetta e cappello degni di mago
+Merlino è tutt'altra storia. | typewriter | speed=slow | pause=standard
