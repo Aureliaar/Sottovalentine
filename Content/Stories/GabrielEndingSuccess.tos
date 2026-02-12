@@ -2,7 +2,7 @@
 title = Sexantanove
 ost = Event:/Music/Stories/Orazio_Theme
 
-[SCREEN_9_GABRIEL_GOODENDING]
+[SCREEN_9_GABRIEL_GOODENDING_POS]
 background = gabriel.png
 transition = fade
 

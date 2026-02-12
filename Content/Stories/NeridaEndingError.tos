@@ -2,7 +2,7 @@
 title = Sexantanove
 ost = Event:/Music/Stories/Orazio_Theme
 
-[SCREEN_10_NERIDA_BADENDING]
+[SCREEN_10_NERIDA_BADENDING_NEG]
 background = T_NeridaPortraitAngry.png
 transition = fade
 
