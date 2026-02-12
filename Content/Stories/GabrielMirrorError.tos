@@ -7,8 +7,8 @@ background = T_GabrielPortraitAngry.png
 transition = fade
 
 Invito Gabriel a mettersi davanti allo specchio.
-“Lo adoro, è come piace a me. Ampio e grande.” | typewriter | speed=fast
+“Lo adoro, è come piace a me. Ampio!” | typewriter
 Sto per dargli ragione ma dalla superficie riflettente fuoriesce una mano
 gigante che lo indica.
-“Bel biondo! Togliti i pantaloni e te lo faccio vedere io cos’è ampio e grande.” | typewriter | speed=fast
-Gabriel diventa rosso, io sobbalzo: “Oh... no!” | typewriter | speed=fast
+“Bel biondo! Togliti i pantaloni e te lo faccio vedere io cos’è ampio.” | typewriter
+Gabriel diventa rosso, io sobbalzo: “Oh... no!” | typewriter | speed=slow | pause=short

@@ -6,21 +6,20 @@ ost = Event:/Music/Stories/Orazio_Theme
 background = gabriel.png
 transition = fade
 
-Sorrido portando al centro della stanza due sedie abbinate a un piccolo tavolino.
-“Mi raccomando usa queste sedie solo con il tavolino o si romperanno.” | typewriter | speed=fast
+Sorrido portando al centro della stanza due sedie abbinate a un piccolo
+tavolino. | typewriter
 Gli occhi del Golden retriever mi scrutano come se si aspattassero qualcosa da me.
 “Siediti! Voglio fare una cosa.”
-Eseguo l’ordine e il giovane mi stupisce. | typewriter | speed=fast
-Dalla tracolla comincia a pescare diversi ingredienti vegetali e posarli sul
-tavolo.
-“Questo solitamente non lo faccio davanti ai clienti.” | typewriter | speed=fast
+Eseguo l’ordine e il giovane mi stupisce. | typewriter
+Dalla tracolla comincia a pescare diversi ingredienti vegetali per poi posarli
+sul tavolino.
+“Questo solitamente non lo faccio davanti ai clienti.” | typewriter
 Mi rivolge un occhiolino.
 Dopodiché inizia a sussurrare parole arcane e una luce accecante
-riempie la stanza costringendomi a sringere le palpebre. | typewriter | speed=fast
-Quando apro gli occhi è apparsa una torta dall'aspetto incredibile sul
-tavolino.
-Nel mentre Gabriel armeggia con un cucchiano pieno di tale leccornia.
-"Aidan apri la boccuccia che sta arrivando un aeroplanino!" | typewriter | speed=fast
+riempie la stanza costringendomi a sringere le palpebre. | typewriter
+Quando apro gli occhi è apparsa una torta dall'aspetto incredibile.
+Nel mentre Gabriel armeggia con un cucchiano pieno di tale leccornia. | typewriter
+"Aidan apri la boccuccia che sta arrivando un aeroplanino!" | typewriter | speed=slow | pause=standard
 [SCREEN_8_GABRIEL_SEDIA_POS_END]
 transition = fade
 

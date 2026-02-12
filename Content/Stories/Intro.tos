@@ -57,33 +57,32 @@ Il tono da bimba capricciosa dona in modo particolare alla sua immagine di pante
 Dal canto mio sorrido, sono sempre stato in grado di inquadrare le persone e so
 perfettamente come provvedere.
 
-“Non ti preoccupare Nerida, ci penso io!” | typewriter | speed=slow | pause=short
+“Non ti preoccupare Nerida, ci penso io!” | typewriter | speed=slow
 [SCREEN_03_FLASHBACK_GABRIEL]
 background = gabriel.png
 transition = crossfade
 
-“Devo dirtelo Aidan, la cucina in comune mi ha proprio conquistato.” | typewriter | speed=fast
+“Devo dirtelo Aidan, la cucina in comune mi ha proprio conquistato.” | typewriter
 Incredibile come l’entusiasmo del giovane pasticcere mi contagi.
-“Hai davvero voglia di cucinare altri dolci anche quando non lavori?” | typewriter | speed=fast
+“Hai davvero voglia di cucinare altri dolci anche quando non lavori?” | typewriter
 Vengo investito in pieno dal sorriso più luminoso che abbia mai visto.
-"Assolutamente sì! E sarò felice di fartene assaggiare anche qualcuno.” | typewriter | speed=fast
+"Assolutamente sì! E sarò felice di fartene assaggiare anche qualcuno.” | typewriter
 Indica un punto vicino alla finestra.
 “Sai quante piante posso far crescere lì?” | typewriter | speed=fast
 Lo incalzo.
-“Ingredienti essenziali per la cucina vegana?” | typewriter | speed=fast
-Annuisce compiaciuto ed emozionato. | typewriter | speed=fast | pause=short
+“Ingredienti essenziali per la cucina vegana?” | typewriter
+Annuisce compiaciuto ed emozionato. | typewriter | speed=slow
 [SCREEN_6_FLASHBACK_GABRIEL]
 background = gabriel.png
 transition = crossfade
 
-Poi tira fuori dalla tasca un cioccolatino e 
-me lo porta direttamente alla bocca: “Prova!” | typewriter | speed=fast
+Poi tira fuori dalla tasca un cioccolatino e
+me lo porta direttamente alla bocca: “Prova!” | typewriter
 La cioccolata mi si scioglie sul palato, sembra veramente al latte.
-Intanto quel golden retriever boy mi scruta con occhi grandi e curiosi. | typewriter | speed=fast
+Intanto quel golden retriever boy mi scruta con occhi grandi e curiosi. | typewriter
 “Com’è?" | typewriter | speed=fast
-Mi sento improvvisamente sereno e rilassato come se le endorfine fossero salite di botto, forse è davvero così. In fondo è un caster gastronomico, no? | typewriter | speed=fast
+Mi sento improvvisamente sereno e rilassato come se le endorfine fossero salite di botto, forse è davvero così. In fondo è un caster gastronomico, no? | typewriter
 “Eccezionale!”
-Mi abbraccia di getto, davvero troppo espansivo, davvero troppo piacevole. | typewriter | speed=fast
-“Credi di poter rendere questo posto pazzesco?” | typewriter | speed=fast
-
-“Mi offendi Gabriel… ovvio che lo renderò tale.” | typewriter | speed=slow
+Mi abbraccia di getto, davvero troppo espansivo, davvero troppo piacevole. | typewriter
+“Credi di poter rendere questo posto pazzesco?” | typewriter
+“Mi offendi Gabriel… ovvio che lo renderò tale.” | typewriter | speed=slow | pause=short

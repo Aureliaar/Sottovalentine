@@ -6,20 +6,21 @@ ost = Event:/Music/Stories/Orazio_Theme
 background = gabriel.png
 transition = fade
 
-“Mi piace un sacco!” | typewriter | speed=fast
+“Mi piace un sacco!” | typewriter
 “Lo so! Credo proprio sia l’appartamento perfetto per te!”
-Annuisce. | typewriter | speed=fast
+Annuisce. | typewriter
 “Forse dovrei pensarci ancora un attimo.”
-La sua espressione indecisa mi colpisce. | typewriter | speed=fast
+La sua espressione indecisa mi colpisce. | typewriter
 “No, direi di no!”
-Non ho la benché minima intenzione di perdere la mia promozione. | typewriter | speed=fast
+Non ho la benché minima intenzione di perdere la mia promozione. | typewriter
 “Lascia che ti mostri il letto.”
-Gli faccio cenno di seguirmi e lui non si fa pregare. | typewriter | speed=fast
+Gli faccio cenno di seguirmi e lui non si fa pregare. | typewriter
 Mentre ci rotoliamo tra le lenzuola Gabriel rende il tutto appiccicoso.
-“Panna di riso.” | typewriter | speed=fast
+“Panna di riso.” | typewriter
 Mi sorride mentre con l’indice porta la sostanza alle mie labbra. Succhio.
-“Incantesimo strano ma apprezzato."
-Ridacchio:"Comunque anche io voglio mostrarti una magia." | typewriter | speed=fast
+“Incantesimo strano ma apprezzato. Comunque anche io voglio mostrarti una magia." | typewriter | pause=short
+
+Ridacchio mentre afferro la mia bacchetta. | typewriter | speed=slow
 [SCREEN_9_GABRIEL_GOODENDING_END]
 transition = fade
 

@@ -6,18 +6,15 @@ ost = Event:/Music/Stories/Orazio_Theme
 transition = fade
 
 Arrivo all’appuntamento con un’ora buona di anticipo rispetto al cliente. | typewriter | speed=fast
-Come apro la porta il caos mi travolge. Prevedibile!
-Gli incanti caotici sono sempre un’arma a doppio taglio. 
-Chi meglio di un caster caotico come me può saperlo? | typewriter | speed=fast
-La mia abilità consiste nello studiare una o più persone, per un massimo di tre individui, per poi materializzare tre oggetti per ognuna di loro. | typewriter | speed=fast
-In alcuni casi da una carta si potrebbe materializze un set di oggetti, ad esempio pennello e tavola incorporata di colori.
-In tal caso l’insieme di oggetti dovrà essere utilizzato insieme, o si romperà. | typewriter | speed=fast
-Il procedimento inizia la sera: in primis studio un determinato profilo. | typewriter | speed=fast
-Poi, durante la notte, il mio subconscio crea delle carte illustrate che
-si materializzano in un luogo prestabilito da me. | typewriter | speed=fast
-Talvolta,  come in questo caso, creando un po' di disordine. | typewriter | speed=fast
-Ora devo solo trovarle e far prendere loro forma.
-Necessitando di un catalizzatore userò la mia
-bacchetta. | typewriter | speed=fast
-Poi diciamocelo, affittare stanze con bacchetta e cappello degni di mago
-Merlino è tutt'altra storia. | typewriter | speed=slow | pause=standard
+Assicurandomi che il mio cappello a punta sia dritto e la bacchetta
+funzionante mi metto all'opera. Mi spiego meglio! | typewriter
+Gli incanti di materializzazione caotica come i miei sono sempre un’arma a
+doppio taglio. | typewriter
+La mia abilità consiste nello studiare una o più persone, per un massimo di tre
+individui. | typewriter
+Poi, durante la notte, il mio subconscio realizzerà per ognuna di loro tre
+carte illustrate. | typewriter
+Queste rappresenteranno un singolo oggetto o un set e si troveranno in posti
+casuali di un luogo però prestabilito da me. | typewriter
+In questo caso stanza n. 69.
+Quindi mi concentro ed evoco una mano magica che possa aiutarmi. | typewriter | speed=slow | pause=short

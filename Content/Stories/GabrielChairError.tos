@@ -6,8 +6,8 @@ ost = Event:/Music/Stories/Orazio_Theme
 background = T_GabrielPortraitAngry.png
 transition = fade
 
-“Vedrai! Questo non te lo aspetti.”
+“Vedrai! Questo non te lo aspetti.” | typewriter
 Sono entusiasta mentre prendo la sedia e mi ci accomodo al centro della stanza.
-Gabriel da parte sua mi guarda interdetto. | typewriter | speed=fast
+Nel mentre Gabriel mi guarda interdetto. | typewriter
 “Ah… carina! Purtroppo ho già la mia poltroncina.”
-La delusione mi pervade, credo di aver frainteso i segnali. | typewriter | speed=fast
+La delusione mi pervade, credo proprio di aver frainteso i segnali. | typewriter | speed=slow | pause=short

@@ -6,14 +6,16 @@ ost = Event:/Music/Stories/Orazio_Theme
 background = T_GabrielPortraitAngry.png
 transition = fade
 
-Il biondino si tortura le mani e continua a guardare il pavimento evitando il mio sguardo.
-“Aidan, ti ringrazio ma non credo che quetso posto adatto a me.”
-Resto in silenzio. | typewriter | speed=fast
+Il biondino si tortura le mani e continua a fissare il pavimento evitando il
+mio sguardo.
+“Aidan, ti ringrazio ma non credo che questo posto sia adatto a me.”
+Resto in silenzio mentre lui continua. | typewriter
 “Non te la prendere, ma… ma credo che un’altra persona si troverebbe meglio
 qui.”
 Annuisco mentre il giovane pesca un dolcetto dalla tracolla e lo poggia sulla
-scrivania, rivolgendomi uno sguardo di scuse, prima di imboccare l'uscita. | typewriter | speed=fast
-Ora mi restano solo due consapevolezze: la prima è che non vi saranno
-promozioni.
-La seconda è che se per avere cibo sano non vi è necessità né di reti né di
-trappole, ma lo stesso non vale per conquistare Gabriel. | typewriter | speed=fast
+scrivania. | typewriter
+Tentenna un attimo, poi imbocca frettolosamente l'uscita. | typewriter
+Ora mi restano solo due consapevolezze: La prima è che non avrò una promozione. | typewriter | pause=short
+
+La seconda è che, se per avere cibo sano non vi è necessità né di reti né di
+trappole, lo stesso non vale per conquistare Gabriel. | typewriter | speed=slow
