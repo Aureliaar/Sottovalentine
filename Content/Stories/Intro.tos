@@ -54,10 +54,10 @@ A quella affermazione mi lancia uno sguardo malizioso e si avvicina lentamente
 al mio orecchio. | typewriter | speed=fast
 “Però Aidan, a questo posto manca qualcosa.” | typewriter
 Il tono da bimba capricciosa dona in modo particolare alla sua immagine di pantera. | typewriter
-Dal canto mio sorrido, sono sempre stato in grado di inquadrare le persone e so
-perfettamente come provvedere.
+Sorrido, sono sempre stato in grado di inquadrare le persone e so perfettamente
+come provvedere.
 
-“Non ti preoccupare Nerida, ci penso io!” | typewriter | speed=slow
+“Non ti preoccupare Nerida, ci penso io!” | typewriter | speed=slow | pause=standard
 [SCREEN_03_FLASHBACK_GABRIEL]
 background = gabriel.png
 transition = crossfade
@@ -71,7 +71,7 @@ Indica un punto vicino alla finestra.
 “Sai quante piante posso far crescere lì?” | typewriter | speed=fast
 Lo incalzo.
 “Ingredienti essenziali per la cucina vegana?” | typewriter
-Annuisce compiaciuto ed emozionato. | typewriter | speed=slow
+Annuisce compiaciuto ed emozionato. | typewriter | speed=slow | pause=standard
 [SCREEN_6_FLASHBACK_GABRIEL]
 background = gabriel.png
 transition = crossfade

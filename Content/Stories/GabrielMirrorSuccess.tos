@@ -12,12 +12,12 @@ Sogghigno, mi trattengo dall’aggiungere che è quello che penso intravedendo i
 suoi pettorali dalla maglietta. | typewriter
 Tuttavia, come a voler esaudire il mio desiderio, il riflesso di Gabriel prende
 vita.
-Inizia a spogliarsi velocemente davanti al ragazzo imbarazzato. 
+Inizia a spogliarsi velocemente davanti al ragazzo imbarazzato.
 "Fa sempre così?” | typewriter
 “Solo quando gli piace la persona che si specchia.”
 Mi rivolge un sorriso. | typewriter
-Allora credo che farebbe lo stesso anche con te. Sei sexy!" | typewriter | speed=slow | pause=short
+Allora credo che farebbe lo stesso anche con te. Sei sexy!" | typewriter | speed=slow | pause=standard
 [SCREEN_7_GABRIEL_SPECCHIO_POS_END]
 transition = fade
 
- | pause=wait | speed=slow
+ | pause=wait
