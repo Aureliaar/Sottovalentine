@@ -34,7 +34,7 @@ Sembra star parlando più a se stessa che davvero con me. | typewriter | speed=f
 La donna visibilmente irritata mi rivolge un sorriso obliquo, interrompendomi.
 “No! Tu non hai idea di cosa io stia parlando.” | typewriter
 Le sue parole mi risuonano nella testa e mi trovo ad annuire. | typewriter | speed=fast
-“Hai ragione, non lo so!” | typewriter | speed=slow
+“Hai ragione, non lo so!” | typewriter | pause=standard
 [SCREEN_02B_FLASHBACK_NERIDA]
 background = nerida.png
 transition = crossfade

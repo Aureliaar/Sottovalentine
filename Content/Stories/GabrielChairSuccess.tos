@@ -8,17 +8,19 @@ transition = fade
 
 Sorrido portando al centro della stanza due sedie abbinate a un piccolo
 tavolino. | typewriter
-Gli occhi del Golden retriever mi scrutano come se si aspattassero qualcosa da me.
-“Siediti! Voglio fare una cosa.”
+Gabriel le guarda divertito, poi mi scruta come se si aspattasse
+qualcosa da me. 
+Non colgo e allora lui prende la parola: “Siediti! Voglio fare una cosa.”
 Eseguo l’ordine e il giovane mi stupisce. | typewriter
 Dalla tracolla comincia a pescare diversi ingredienti vegetali per poi posarli
 sul tavolino.
 “Questo solitamente non lo faccio davanti ai clienti.” | typewriter
 Mi rivolge un occhiolino.
 Dopodiché inizia a sussurrare parole arcane e una luce accecante
-riempie la stanza costringendomi a sringere le palpebre. | typewriter
-Quando apro gli occhi è apparsa una torta dall'aspetto incredibile.
-Nel mentre Gabriel armeggia con un cucchiano pieno di tale leccornia. | typewriter
+riempie la stanza costringendomi a stringere le palpebre. | typewriter
+Quando riapro gli occhi ho davanti una delle torte dall'aspetto più appetitoso
+che abbia mai visto. | typewriter
+Nel mentre Gabriel armeggia con un cucchiano pieno di tale leccornia.
 "Aidan apri la boccuccia che sta arrivando un aeroplanino!" | typewriter | speed=slow | pause=standard
 [SCREEN_8_GABRIEL_SEDIA_POS_END]
 transition = fade
